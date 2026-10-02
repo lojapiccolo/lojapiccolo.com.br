@@ -4,9 +4,8 @@
   "nome": "Gira",
   "nome2": "Formas",
   "familia": "Encaixar & Equilibrar",
-  "ordem": 1,
-  "idade": "",
-  "preco": "",
+  "idade": "3 a 6 anos",
+  "preco": "249,90",
   "desc": "Gire, encaixe e empilhe formas e cores em uma brincadeira cheia de novas combinações.",
   "beneficios": [
    "Estimula a coordenação motora fina",
@@ -36,9 +35,8 @@
   "nome": "Melancia",
   "nome2": "Equilibrista",
   "familia": "Encaixar & Equilibrar",
-  "ordem": 2,
-  "idade": "",
-  "preco": "",
+  "idade": "3 a 6 anos",
+  "preco": "139,90",
   "desc": "Monte a melancia peça por peça e encontre o equilíbrio perfeito sem deixar a brincadeira cair.",
   "beneficios": [
    "Trabalha o equilíbrio e a paciência",
@@ -48,7 +46,7 @@
   ],
   "dim": "21 × 10,5 × 3 cm",
   "mat": "PLA",
-  "cont": "6 peças: 1 verde + 1 branca + 4 vermelhas em ordem decrescente",
+  "cont": "6 peças: verde, branca e 4 vermelhas",
   "cores": [],
   "escolha": false,
   "nota": "Composição fixa de cores",
@@ -68,10 +66,9 @@
   "nome": "Encaixa",
   "nome2": "Formas",
   "familia": "Encaixar & Equilibrar",
-  "ordem": 3,
-  "idade": "",
-  "preco": "",
-  "desc": "Três formas, três encaixes e muitas descobertas em uma brincadeira simples, colorida e intuitiva.",
+  "idade": "3 a 6 anos",
+  "preco": "99,90",
+  "desc": "Três formas, três encaixes e muitas descobertas em uma brincadeira simples e colorida.",
   "beneficios": [
    "Estimula a coordenação motora",
    "Desenvolve o raciocínio lógico",
@@ -108,9 +105,8 @@
   "nome": "Leão",
   "nome2": "Monta & Brinca",
   "familia": "Monta & Brinca",
-  "ordem": 4,
-  "idade": "",
-  "preco": "",
+  "idade": "3 a 6 anos",
+  "preco": "49,90",
   "desc": "Um quebra-cabeça em 3D para montar, brincar e desenvolver habilidades de forma divertida.",
   "beneficios": [
    "Desenvolve o raciocínio espacial",
@@ -152,9 +148,8 @@
   "nome": "Girafa",
   "nome2": "Monta & Brinca",
   "familia": "Monta & Brinca",
-  "ordem": 5,
-  "idade": "",
-  "preco": "",
+  "idade": "3 a 6 anos",
+  "preco": "29,90",
   "desc": "Monte sua girafa, desmonte e comece de novo — cada peça vira uma nova descoberta.",
   "beneficios": [
    "Desenvolve o raciocínio espacial",
@@ -196,9 +191,8 @@
   "nome": "Dino",
   "nome2": "Equilibra",
   "familia": "Encaixar & Equilibrar",
-  "ordem": 6,
-  "idade": "",
-  "preco": "",
+  "idade": "3 a 6 anos",
+  "preco": "79,90",
   "desc": "Empilhe os dinossauros sobre a base e descubra até onde o equilíbrio da pré-história consegue chegar.",
   "beneficios": [
    "Trabalha o equilíbrio e a paciência",
@@ -206,9 +200,9 @@
    "Diverte toda a família",
    "Incentiva o faz de conta"
   ],
-  "dim": "Base 12 × 5 × 2 cm; dinos até 5,5 × 4,5 × 1,8 cm",
+  "dim": "Base 12 × 5 × 2 cm",
   "mat": "PLA",
-  "cont": "1 base de equilíbrio + 10 dinossauros",
+  "cont": "1 base + 10 dinossauros",
   "cores": [
    {
     "n": "Preto",
@@ -240,9 +234,8 @@
   "nome": "Encaixa",
   "nome2": "Tamanhos",
   "familia": "Encaixar & Equilibrar",
-  "ordem": 7,
-  "idade": "",
-  "preco": "",
+  "idade": "3 a 6 anos",
+  "preco": "74,90",
   "desc": "Do maior ao menor, compare, organize e encaixe as peças explorando diferentes tamanhos.",
   "beneficios": [
    "Desenvolve a noção de tamanho e ordem",
@@ -252,7 +245,7 @@
   ],
   "dim": "13,4 × 4 × 4 cm",
   "mat": "PLA",
-  "cont": "1 base + peças de diferentes tamanhos",
+  "cont": "1 base + peças de vários tamanhos",
   "cores": [
    {
     "n": "Verde",
@@ -284,9 +277,8 @@
   "nome": "Elefante",
   "nome2": "Monta & Brinca",
   "familia": "Monta & Brinca",
-  "ordem": 8,
-  "idade": "",
-  "preco": "",
+  "idade": "3 a 6 anos",
+  "preco": "49,90",
   "desc": "Um elefante em peças para montar, desmontar e levar a imaginação para passear.",
   "beneficios": [
    "Desenvolve o raciocínio espacial",
@@ -332,9 +324,8 @@
   "nome": "Baleia",
   "nome2": "Splash",
   "familia": "Água & Movimento",
-  "ordem": 9,
-  "idade": "",
-  "preco": "",
+  "idade": "1 a 3 anos",
+  "preco": "49,90",
   "desc": "Uma pequena baleia feita para transformar a hora da água em brincadeira.",
   "beneficios": [
    "Transforma o banho em brincadeira",
@@ -344,7 +335,7 @@
   ],
   "dim": "8,6 × 5,1 × 5,4 cm",
   "mat": "PLA",
-  "cont": "1 Baleia Splash",
+  "cont": "1 Baleia Splash · tamanho P ou G",
   "cores": [
    {
     "n": "Azul",
@@ -380,9 +371,8 @@
   "nome": "Trilha",
   "nome2": "das Cores",
   "familia": "Encaixar & Equilibrar",
-  "ordem": 10,
-  "idade": "",
-  "preco": "",
+  "idade": "3 a 6 anos",
+  "preco": "89,90",
   "desc": "Mova cada peça pelo seu caminho e percorra curvas, zigue-zagues e trilhas cheias de cor.",
   "beneficios": [
    "Estimula a coordenação motora fina",
@@ -392,7 +382,7 @@
   ],
   "dim": "17 × 16,5 × 8 cm",
   "mat": "PETG",
-  "cont": "1 painel Trilha das Cores com peças móveis",
+  "cont": "1 painel com peças móveis",
   "cores": [
    {
     "n": "Bege",
@@ -424,9 +414,8 @@
   "nome": "Pequeno Chef",
   "nome2": "Massa Divertida",
   "familia": "Faz de Conta",
-  "ordem": 11,
-  "idade": "",
-  "preco": "",
+  "idade": "3 a 6 anos",
+  "preco": "249,90",
   "desc": "Um convite para preparar receitas imaginárias, servir pratos especiais e transformar o faz de conta em uma deliciosa brincadeira.",
   "beneficios": [
    "Incentiva o faz de conta",
@@ -434,9 +423,9 @@
    "Estimula a coordenação motora",
    "Aproxima a criança da cozinha"
   ],
-  "dim": "Caixa 10,7 × 7,7 × 13,1 cm; tigela Ø 10,6 × 3,8 cm; garfo 11,1 cm",
+  "dim": "Caixa 10,7 × 7,7 × 13,1 cm",
   "mat": "PLA",
-  "cont": "Talher + massa + prato + caixa da massa + embalagem de molho de tomate + 2 tomates",
+  "cont": "Massa, prato, caixa, molho, garfo e 2 tomates",
   "cores": [],
   "escolha": false,
   "nota": "Composição fixa de cores",
@@ -452,9 +441,8 @@
   "nome": "Tricerátopo",
   "nome2": "Monta & Brinca",
   "familia": "Monta & Brinca",
-  "ordem": 12,
-  "idade": "",
-  "preco": "",
+  "idade": "3 a 6 anos",
+  "preco": "49,90",
   "desc": "Monte seu tricerátopo peça por peça e dê vida a novas aventuras jurássicas.",
   "beneficios": [
    "Desenvolve o raciocínio espacial",
@@ -500,9 +488,8 @@
   "nome": "Raposa",
   "nome2": "Monta & Brinca",
   "familia": "Monta & Brinca",
-  "ordem": 13,
-  "idade": "",
-  "preco": "",
+  "idade": "3 a 6 anos",
+  "preco": "69,90",
   "desc": "Uma raposinha para montar, desmontar e acompanhar histórias criadas pela imaginação.",
   "beneficios": [
    "Desenvolve o raciocínio espacial",
@@ -544,9 +531,8 @@
   "nome": "Trio",
   "nome2": "Sobre Rodas",
   "familia": "Sobre Rodas",
-  "ordem": 14,
-  "idade": "",
-  "preco": "",
+  "idade": "2 a 4 anos",
+  "preco": "149,90",
   "desc": "Ganso, coelho e cachorro juntos para uma brincadeira que vai longe sobre rodas.",
   "beneficios": [
    "Estimula a coordenação motora",
@@ -554,9 +540,9 @@
    "Desenvolve a imaginação",
    "Três amigos para brincar junto"
   ],
-  "dim": "Ganso 13,6 × 14,5 cm · Coelho 10,6 × 11,5 cm · Cachorro 11,6 × 10 cm",
+  "dim": "3 peças de 10 a 14,5 cm",
   "mat": "PLA",
-  "cont": "Ganso Sobre Rodas + Coelho Sobre Rodas + Cachorro Sobre Rodas",
+  "cont": "Ganso, Coelho e Cachorro",
   "cores": [
    {
     "n": "Madeira",
@@ -584,10 +570,9 @@
   "nome": "Ganso",
   "nome2": "Sobre Rodas",
   "familia": "Sobre Rodas",
-  "ordem": 15,
-  "idade": "",
-  "preco": "",
-  "desc": "Um companheiro de rodas para empurrar, passear e inventar histórias por toda a casa.",
+  "idade": "2 a 4 anos",
+  "preco": "59,90",
+  "desc": "Um companheiro divertido para empurrar, passear e inventar histórias.",
   "beneficios": [
    "Estimula a coordenação motora",
    "Incentiva o faz de conta",
@@ -632,9 +617,8 @@
   "nome": "Coelho",
   "nome2": "Sobre Rodas",
   "familia": "Sobre Rodas",
-  "ordem": 16,
-  "idade": "",
-  "preco": "",
+  "idade": "2 a 4 anos",
+  "preco": "59,90",
   "desc": "Um coelhinho sobre rodas pronto para acompanhar pequenos passeios e grandes histórias.",
   "beneficios": [
    "Estimula a coordenação motora",
@@ -680,9 +664,8 @@
   "nome": "Cachorro",
   "nome2": "Sobre Rodas",
   "familia": "Sobre Rodas",
-  "ordem": 17,
-  "idade": "",
-  "preco": "",
+  "idade": "2 a 4 anos",
+  "preco": "59,90",
   "desc": "Um cachorrinho sobre rodas para levar a brincadeira para onde a imaginação quiser.",
   "beneficios": [
    "Estimula a coordenação motora",
@@ -728,9 +711,8 @@
   "nome": "Carrinho",
   "nome2": "Turbo Balão",
   "familia": "Água & Movimento",
-  "ordem": 18,
-  "idade": "",
-  "preco": "",
+  "idade": "6+ anos, com adulto",
+  "preco": "49,90",
   "desc": "Um carrinho movido pela força do ar para transformar cada largada em uma brincadeira cheia de movimento e descobertas.",
   "beneficios": [
    "Mostra na prática a força do ar",
@@ -738,9 +720,9 @@
    "Estimula a coordenação motora",
    "Brincadeira para fazer com um adulto"
   ],
-  "dim": "10 × 8,5 × 4 cm (sem o balão)",
+  "dim": "10 × 8,5 × 4 cm",
   "mat": "PLA",
-  "cont": "1 Carrinho Turbo Balão. Balão não incluso",
+  "cont": "1 carrinho (balão não incluso)",
   "cores": [
    {
     "n": "Azul",

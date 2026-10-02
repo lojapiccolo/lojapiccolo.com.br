@@ -111,6 +111,20 @@ if __name__ == '__main__':
         if not token: sys.exit('Defina NOTION_TOKEN.')
         rows = baixar(token)
     prods = converter(rows, extras)
+    # Segurança: preço e idade vêm por rollup; se a integração não enxergar a base interna, eles chegam vazios.
+    # Nesse caso usa o valor anterior e avisa, em vez de publicar o site sem preço.
+    try: antes = {p['sku']: p for p in json.load(open(R / 'produtos.json', encoding='utf-8'))}
+    except Exception: antes = {}
+    problemas = []
+    for p in prods:
+        for campo in ('preco', 'idade'):
+            if not p[campo]:
+                if antes.get(p['sku'], {}).get(campo):
+                    p[campo] = antes[p['sku']][campo]; problemas.append(f"{p['sku']}: {campo} vazio no Notion, mantido o anterior")
+                else:
+                    sys.exit(f"ERRO: {p['sku']} sem {campo} e sem valor anterior. Compartilhe a base Produtos com a integração.")
+    if problemas:
+        print('AVISO (rollups vazios — a integração provavelmente não tem acesso à base Produtos):'); print('\n'.join(problemas))
     faltam = [p['sku'] for p in prods if not (R.parent / 'play' / 'img' / f"cena_{p['sku']}.webp").exists()]
     if faltam: print('ATENÇÃO: sem imagens em play/img para', faltam, '(gerar a ficha antes de publicar)')
     json.dump(prods, open(R / 'produtos.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
