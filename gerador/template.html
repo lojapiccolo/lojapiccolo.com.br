@@ -1,0 +1,389 @@
+<title>Piccolo Play</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@600;700;800&family=Fredoka:wght@500&display=swap">
+<style>
+/* Layout: vitrine de uma marca de brinquedos em cena clara. Um só tema, o mundo da marca (creme, sálvia, pêssego, azul, terracota, ameixa). */
+:root{
+  --creme:#FAF5EE; --creme2:#F3EBDF; --branco:#FFFDF9; --linha:#EADFCF;
+  --ameixa:#5E4650; --ameixa2:#8A7480;
+  --salvia:#8C9C7A; --salvia-esc:#6F7F5E; --salvia-clara:#DCE3D2;
+  --t-salvia:#98A888; --t-pessego:#E6BE94; --t-azul:#90A8B5; --t-terra:#C98870;
+  --pessego-claro:#F6E6DA; --azul-claro:#DEE8EC; --terra-claro:#F3DDD2; --amarelo-claro:#F7EBD2;
+  --zap:#4FA86A;
+  --display:"Fraunces",Georgia,serif; --texto:"Nunito","Segoe UI",system-ui,sans-serif; --ludico:"Fredoka","Nunito",sans-serif;
+  --sombra:0 18px 40px -26px rgba(80,50,30,.45);
+  color-scheme:light;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--creme);color:var(--ameixa);font-family:var(--texto);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.05;letter-spacing:-.01em;text-wrap:balance}
+.wrap{width:min(1180px,100%);margin-inline:auto;padding-inline:20px}
+.eyebrow{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--salvia-esc)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+:focus-visible{outline:3px solid var(--t-azul);outline-offset:3px;border-radius:6px}
+
+/* topo */
+.topo{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(250,245,238,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--linha)}
+.topo .wrap{display:flex;align-items:center;gap:18px;min-height:92px}
+.marca{display:flex;align-items:center;gap:14px;text-decoration:none}
+.marca img{height:66px;width:auto}
+.play{display:flex;gap:3px}
+.play{gap:5px}
+.play span{width:42px;height:40px;border-radius:11px 13px 10px 13px;display:grid;place-items:center;font-family:var(--ludico);font-size:25px;color:#FBF8F1;box-shadow:inset 0 -2px 0 rgba(0,0,0,.06)}
+.play span:nth-child(1){background:var(--t-salvia);transform:rotate(-4deg)}
+.play span:nth-child(2){background:var(--t-pessego);transform:rotate(3deg)}
+.play span:nth-child(3){background:var(--t-azul);transform:rotate(-2deg)}
+.play span:nth-child(4){background:var(--t-terra);transform:rotate(4deg)}
+.nav{margin-left:auto;display:flex;gap:4px;align-items:center}
+.nav a{text-decoration:none;font-weight:800;font-size:14.5px;padding:8px 12px;border-radius:999px;color:var(--ameixa2)}
+.nav a:hover{background:var(--creme2);color:var(--ameixa)}
+.btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:800;font-size:15px;padding:12px 20px;border-radius:999px;background:var(--salvia);color:#fff;box-shadow:var(--sombra);transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px);background:var(--salvia-esc)}
+.btn.zap{background:var(--zap)}
+.btn.zap:hover{background:#3f9158}
+.btn.suave{background:var(--branco);color:var(--ameixa);box-shadow:0 0 0 1.5px var(--linha) inset}
+.btn.suave:hover{background:#fff}
+.btn svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+@media (max-width:760px){.nav a:not(.btn){display:none}.marca img{height:52px}.play span{width:34px;height:32px;font-size:20px}.topo .wrap{min-height:78px}}
+
+/* seções */
+section{padding-block:72px}
+section + section{border-top:1px solid var(--linha)}
+.cab{display:grid;gap:10px;max-width:640px;margin-bottom:34px}
+.cab h2{font-size:clamp(30px,4.2vw,44px);color:var(--salvia-esc)}
+.cab p{color:var(--ameixa2);font-size:18px}
+
+/* herói */
+.heroi{padding-block:56px 40px;position:relative;overflow:hidden}
+.heroi .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.heroi h1{font-size:clamp(40px,6vw,74px);color:var(--salvia-esc)}
+.heroi h1 em{font-style:normal;color:var(--ameixa);display:block;font-size:.5em;font-weight:600;margin-top:14px;letter-spacing:0;line-height:1.3}
+.heroi p.lead{margin-top:20px;font-size:19px;color:var(--ameixa2);max-width:52ch}
+.heroi .acoes{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.palco{position:relative;aspect-ratio:1/1;max-width:560px;margin-inline:auto;width:100%}
+.palco .blob{position:absolute;inset:6%;border-radius:48% 52% 40% 60%/55% 45% 55% 45%;background:var(--salvia-clara)}
+.palco .blob2{position:absolute;left:52%;top:-2%;width:40%;height:40%;border-radius:50%;background:var(--pessego-claro)}
+.palco .mesa{position:absolute;left:4%;right:4%;bottom:14%;height:22%;border-radius:50%;background:radial-gradient(ellipse at 50% 50%,rgba(120,86,56,.22),rgba(120,86,56,0) 70%)}
+.palco img{position:absolute;filter:drop-shadow(0 18px 18px rgba(80,50,30,.22))}
+.palco .t1{left:12%;bottom:22%;width:33%}
+.palco .t2{left:47%;bottom:23%;width:44%}
+.palco .t3{left:62%;top:9%;width:28%}
+.palco .t4{left:2%;top:4%;width:24%}
+.rab{position:absolute;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.4;pointer-events:none}
+@media (prefers-reduced-motion:no-preference){
+  .palco img{animation:flutua 6s ease-in-out infinite}
+  .palco .t2{animation-delay:-2s}.palco .t3{animation-delay:-3.5s}.palco .t4{animation-delay:-1s}
+  @keyframes flutua{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+}
+@media (max-width:860px){.heroi .wrap{grid-template-columns:1fr}.palco{max-width:420px}}
+
+/* coleções */
+.colecoes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.col{position:relative;border-radius:26px;padding:22px 20px 18px;min-height:250px;display:flex;flex-direction:column;justify-content:flex-end;text-decoration:none;overflow:hidden;transition:transform .18s}
+.col:hover{transform:translateY(-4px)}
+.col img{position:absolute;right:6%;top:8%;width:44%;height:44%;object-fit:contain;filter:drop-shadow(0 10px 10px rgba(80,50,30,.2))}
+.col h3{font-size:24px;color:var(--ameixa)}
+.col small{color:var(--ameixa2);font-weight:700;font-size:14px;margin-top:4px}
+.col .n{font-weight:800;font-size:12px;letter-spacing:.1em;color:var(--ameixa2);margin-top:8px}
+.c1{background:var(--pessego-claro)}.c2{background:var(--salvia-clara)}.c3{background:var(--azul-claro)}.c4{background:var(--terra-claro)}.c5{background:var(--amarelo-claro)}
+
+/* filtros e grade */
+.filtros{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px;align-items:center}
+.filtros .rot{font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--ameixa2);margin-right:4px}
+.chip{border-radius:999px;padding:8px 14px;font-weight:800;font-size:14px;background:var(--branco);box-shadow:0 0 0 1.5px var(--linha) inset;color:var(--ameixa2)}
+.chip[aria-pressed="true"]{background:var(--salvia);color:#fff;box-shadow:none}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}
+.card{background:var(--branco);border-radius:26px;overflow:hidden;text-decoration:none;display:flex;flex-direction:column;box-shadow:var(--sombra);transition:transform .18s}
+.card:hover{transform:translateY(-4px)}
+.card .foto{aspect-ratio:1/1;display:grid;place-items:center;padding:18px;position:relative}
+.card .foto::before{content:"";position:absolute;inset:14% 10% 18%;border-radius:50% 50% 45% 55%/60% 60% 40% 40%;opacity:.9}
+.card .foto img{position:relative;width:78%;height:78%;object-fit:contain;filter:drop-shadow(0 12px 10px rgba(80,50,30,.22))}
+.f1 .foto::before{background:var(--pessego-claro)}.f2 .foto::before{background:var(--salvia-clara)}.f3 .foto::before{background:var(--azul-claro)}.f4 .foto::before{background:var(--terra-claro)}.f5 .foto::before{background:var(--amarelo-claro)}
+.card .txt{padding:4px 18px 18px;display:grid;gap:4px}
+.card h3{font-size:21px;color:var(--ameixa)}
+.card h3 small{display:block;font-size:15px;font-weight:600;color:var(--ameixa2);margin-top:2px}
+.card .linha{display:flex;justify-content:space-between;align-items:center;margin-top:8px}
+.preco{font-family:var(--display);font-weight:700;font-size:22px;color:var(--salvia-esc)}
+.preco sup{font-size:.55em;vertical-align:top;margin-top:.2em;display:inline-block}
+.idade{display:inline-flex;align-items:center;gap:5px;font-weight:800;font-size:12.5px;color:#fff;background:var(--salvia);border-radius:999px;padding:4px 10px}
+.vazio{padding:40px;text-align:center;color:var(--ameixa2);grid-column:1/-1}
+
+/* história */
+.historia .wrap{display:grid;grid-template-columns:minmax(0,62ch) 1fr;gap:48px;align-items:start}
+.historia h2{font-size:clamp(30px,4.2vw,44px);color:var(--salvia-esc);margin-bottom:22px}
+.historia p{margin-bottom:16px;font-size:18px}
+.historia p.assina{font-family:var(--display);font-weight:700;font-size:26px;color:var(--salvia-esc);margin-top:26px;margin-bottom:2px}
+.historia p.assina2{font-family:var(--display);font-weight:600;font-size:20px;color:var(--ameixa2)}
+.varal{position:sticky;top:120px;display:grid;gap:18px}
+.polaroid{background:#fff;padding:12px 12px 32px;border-radius:14px;box-shadow:var(--sombra);width:min(280px,100%);justify-self:center;transform:rotate(-2.5deg)}
+.polaroid:nth-child(2){transform:rotate(2deg)}
+.polaroid img{aspect-ratio:1;object-fit:cover;border-radius:8px}
+.polaroid figcaption{font-family:var(--display);font-weight:600;font-size:15px;color:var(--ameixa2);margin-top:10px;text-align:center}
+@media (max-width:900px){.historia .wrap{grid-template-columns:1fr}.varal{position:static;grid-template-columns:1fr 1fr}.polaroid{width:100%}}
+
+/* passos */
+.passos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.passo{background:var(--branco);border-radius:24px;padding:24px 22px;display:grid;gap:10px;box-shadow:var(--sombra)}
+.passo .ic{width:52px;height:52px;border-radius:50%;display:grid;place-items:center}
+.passo .ic svg{width:26px;height:26px;fill:none;stroke:#FBF8F1;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.passo:nth-child(1) .ic{background:var(--t-salvia)}.passo:nth-child(2) .ic{background:var(--t-pessego)}.passo:nth-child(3) .ic{background:var(--t-azul)}.passo:nth-child(4) .ic{background:var(--t-terra)}
+.passo h3{font-size:21px}
+.passo p{color:var(--ameixa2);font-size:16px}
+.passo .num{font-weight:800;font-size:12px;letter-spacing:.12em;color:var(--ameixa2)}
+
+/* rodapé */
+.rodape{background:var(--salvia);color:#FBF8F1;padding-block:48px 36px;margin-top:40px;position:relative}
+.rodape .onda{position:absolute;left:0;right:0;top:-28px;height:30px;width:100%}
+.rodape .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:28px}
+.rodape h4{font-family:var(--display);font-weight:700;font-size:22px;letter-spacing:.1em;margin-bottom:6px}
+.rodape p{opacity:.95;font-size:15.5px}
+.rodape a{font-weight:800}
+.rodape .rot{font-weight:800;font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.8;margin-bottom:8px}
+.rodape .fim{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.25);padding-top:18px;font-size:13.5px;opacity:.85;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (max-width:760px){.rodape .wrap{grid-template-columns:1fr}}
+
+/* página do brinquedo */
+.produto{padding-block:28px 60px}
+.volta{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:800;font-size:14.5px;color:var(--ameixa2);margin-bottom:22px}
+.volta svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.prod{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:44px;align-items:start}
+.visor{position:sticky;top:116px;display:grid;gap:12px}
+.visor .grande{border-radius:30px;overflow:hidden;background:var(--creme2);aspect-ratio:14/15;box-shadow:var(--sombra);position:relative}
+.visor .grande img{width:100%;height:100%;object-fit:cover}
+.visor .grande img.contem{object-fit:contain;background:var(--branco);padding:12px}
+.visor .grande img.cut{object-fit:contain;padding:12%;background:radial-gradient(ellipse at 50% 60%,var(--salvia-clara),var(--creme2) 72%)}
+.visor .selo{position:absolute;left:14px;bottom:14px;font-size:12px;font-weight:800;color:var(--ameixa2);background:rgba(255,253,249,.92);padding:5px 11px;border-radius:999px}
+.minis{display:flex;gap:10px;flex-wrap:wrap}
+.minis button{width:76px;height:76px;border-radius:16px;overflow:hidden;background:var(--creme2);padding:0;box-shadow:0 0 0 2px transparent;display:grid;place-items:center}
+.minis button[aria-pressed="true"]{box-shadow:0 0 0 2.5px var(--salvia)}
+.minis img{width:100%;height:100%;object-fit:cover}
+.minis img.contem{object-fit:contain;padding:8px;background:var(--branco)}
+.info h1{font-size:clamp(38px,5vw,60px);color:var(--salvia-esc)}
+.info h1 em{font-style:normal;display:block;color:var(--ameixa);font-size:.56em;margin-top:4px}
+.info .meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px}
+.sku{font-weight:800;font-size:12.5px;letter-spacing:.1em;background:var(--pessego-claro);border-radius:999px;padding:5px 12px}
+.info .desc{font-family:var(--display);font-weight:600;font-size:21px;line-height:1.35;margin-top:14px;color:var(--ameixa)}
+.bloco{margin-top:28px}
+.bloco h3{font-size:16px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-family:var(--texto);color:var(--ameixa2);margin-bottom:14px}
+.bens{display:grid;gap:12px}
+.ben{display:flex;align-items:center;gap:14px}
+.ben .ic{flex:0 0 50px;height:50px;border-radius:50%;display:grid;place-items:center;box-shadow:inset 0 -3px 0 rgba(0,0,0,.07)}
+.ben .ic svg{width:26px;height:26px;fill:none;stroke:#FBF8F1;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ben:nth-child(1) .ic{background:var(--t-salvia)}.ben:nth-child(2) .ic{background:var(--t-pessego)}.ben:nth-child(3) .ic{background:var(--t-azul)}.ben:nth-child(4) .ic{background:var(--t-terra)}
+.ben p{font-family:var(--display);font-weight:600;font-size:19px;line-height:1.2}
+.cores{display:flex;flex-wrap:wrap;gap:10px}
+.cor{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:6px 14px 6px 6px;font-weight:800;font-size:14px;background:var(--branco);box-shadow:0 0 0 1.5px var(--linha) inset}
+.cor i{width:28px;height:28px;border-radius:50%;border:2px solid rgba(94,70,80,.18);box-shadow:inset 0 -3px 0 rgba(0,0,0,.06)}
+.cor[aria-pressed="true"]{box-shadow:0 0 0 2.5px var(--salvia) inset}
+.cor.fixa{cursor:default}
+.nota{font-size:14px;color:var(--ameixa2);font-weight:700;margin-top:10px}
+.compra{margin-top:28px;background:var(--branco);border-radius:26px;padding:22px;box-shadow:var(--sombra);display:grid;gap:14px}
+.compra .topo2{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.compra .preco{font-size:44px;line-height:1}
+.compra .preco small{font-family:var(--texto);font-weight:800;font-size:14px;color:var(--ameixa2);display:block;letter-spacing:.08em;margin-bottom:4px}
+.compra .enc{display:flex;align-items:center;gap:8px;font-weight:800;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ameixa2)}
+.compra .enc svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round}
+.compra .btn{justify-content:center;font-size:17px;padding:15px 22px}
+.compra .msg{font-size:13.5px;color:var(--ameixa2);background:var(--creme);border-radius:14px;padding:10px 14px;line-height:1.4}
+details{margin-top:22px;border:1.5px dashed var(--linha);border-radius:20px;padding:0 18px}
+summary{cursor:pointer;list-style:none;font-weight:800;padding:16px 0;display:flex;justify-content:space-between;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--display);font-size:24px;color:var(--salvia-esc)}
+details[open] summary::after{content:"–"}
+.det{display:grid;gap:12px;padding-bottom:18px}
+.det div{display:grid;grid-template-columns:150px 1fr;gap:12px;font-size:16px}
+.det b{color:var(--ameixa2);font-weight:800}
+.ficha-link{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:14.5px;color:var(--salvia-esc);text-decoration:none;margin-top:16px}
+.relac{margin-top:60px}
+.relac h2{font-size:30px;color:var(--salvia-esc);margin-bottom:22px}
+@media (max-width:860px){.prod{grid-template-columns:1fr}.visor{position:static}}
+
+/* lightbox da ficha */
+.lb{position:fixed;inset:0;background:rgba(60,40,45,.78);z-index:50;display:grid;place-items:center;padding:16px}
+.lb img{max-height:92vh;max-width:100%;width:auto;border-radius:18px;box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}
+.lb button{position:absolute;top:18px;right:18px;width:46px;height:46px;border-radius:50%;background:#fff;color:var(--ameixa);font-size:26px;font-weight:700;display:grid;place-items:center}
+.zap-flutuante{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;width:58px;height:58px;border-radius:50%;background:var(--zap);display:grid;place-items:center;box-shadow:0 14px 28px -12px rgba(0,0,0,.45)}
+.zap-flutuante svg{width:30px;height:30px;fill:#fff}
+.proto{background:var(--ameixa);color:#FBF8F1;text-align:center;font-size:12.5px;font-weight:700;padding:7px 12px;letter-spacing:.04em}
+</style>
+
+<div class="proto">Protótipo para avaliação · imagens ilustrativas · nada aqui está no ar ainda</div>
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="#inicio" aria-label="Piccolo Play, início"><img src="img/logo.png" alt="Piccolo"><span class="play"><span>P</span><span>L</span><span>A</span><span>Y</span></span></a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#brinquedos">Brinquedos</a><a href="#colecoes">Coleções</a><a href="#historia">Nossa história</a><a href="#como">Como encomendar</a>
+      <a class="btn zap" href="https://wa.me/5524992170426?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Piccolo%20Play." target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<footer class="rodape">
+  <svg class="onda" viewBox="0 0 1200 30" preserveAspectRatio="none"><path d="M0 30C200 0 400 30 600 18S1000 0 1200 30z" fill="#8C9C7A"/></svg>
+  <div class="wrap">
+    <div><h4>PICCOLO PLAY</h4><p>Desenvolvimento em cada camada.</p><p style="margin-top:12px">Linha de brinquedos da Piccolo, impressos em 3D sob encomenda, em Petrópolis, RJ.</p></div>
+    <div><p class="rot">Loja</p><p>Piccolo · Brechó Infantil e Multimarcas<br>Rua do Imperador, 970, loja 07<br>Centro · Petrópolis, RJ</p></div>
+    <div><p class="rot">Fale com a gente</p><p><a href="https://instagram.com/piccolo.brecho" target="_blank" rel="noopener">@piccolo.brecho</a><br><a href="https://wa.me/5524992170426" target="_blank" rel="noopener">WhatsApp (24) 99217-0426</a></p><p style="margin-top:10px;font-size:13.5px;opacity:.85">Pix, cartão na loja ou link de cartão.</p></div>
+    <div class="fim"><span>© 2026 Piccolo · Piccolo Play</span><span>Imagens ilustrativas. Cores e acabamento podem variar levemente, por serem peças feitas uma a uma.</span></div>
+  </div>
+</footer>
+<a class="zap-flutuante" href="https://wa.me/5524992170426?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Piccolo%20Play." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c1.7.7 2.1.6 2.8.5a2.4 2.4 0 0 0 1.6-1.1 2 2 0 0 0 .1-1.1c0-.1-.2-.2-.5-.3z"/></svg></a>
+
+<script>
+/*__DATA__*/
+const ZAP='5524992170426';
+const FAM=[
+ {id:'sobre-rodas',n:'Sobre Rodas',s:'Para empurrar, passear e inventar histórias',cls:'c1',f:'f1',img:'015'},
+ {id:'monta-brinca',n:'Monta & Brinca',s:'Quebra-cabeças em 3D de bichos para montar e desmontar',cls:'c2',f:'f2',img:'004'},
+ {id:'encaixar-equilibrar',n:'Encaixar & Equilibrar',s:'Formas, tamanhos, cores e equilíbrio',cls:'c3',f:'f3',img:'002'},
+ {id:'faz-de-conta',n:'Faz de Conta',s:'Pequenas cozinhas e grandes receitas imaginárias',cls:'c4',f:'f4',img:'011'},
+ {id:'agua-movimento',n:'Água & Movimento',s:'Para a hora do banho e para ver a força do ar',cls:'c5',f:'f5',img:'009'},
+];
+const famDe=n=>FAM.find(f=>f.n===n);
+const IDADES=['1 a 3 anos','2 a 4 anos','3 a 6 anos','6+ anos, com adulto'];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const precoHtml=p=>{const [i,c]=p.split(',');return `<span class="preco">R$ ${i}<sup>,${c}</sup></span>`};
+const idadeHtml=i=>`<span class="idade"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="7" r="3.2"/><path d="M5.5 20c.6-4 3.2-6.2 6.5-6.2s5.9 2.2 6.5 6.2"/></svg>${esc(i)}</span>`;
+const icone=t=>{const m=MAPA.find(([k])=>t.toLowerCase().includes(k.toLowerCase()));return IC[m?m[1]:'folha']};
+const zapLink=(p,cor)=>{const t=cor?`Olá! Quero o ${p.nome} ${p.nome2} na cor ${cor} (PIC-PLAY-${p.sku}) da Piccolo Play.`:`Olá! Tenho interesse no ${p.nome} ${p.nome2} (PIC-PLAY-${p.sku}) da Piccolo Play.`;return `https://wa.me/${ZAP}?text=${encodeURIComponent(t)}`};
+
+function cardHtml(p){const f=famDe(p.familia);return `<a class="card ${f.f}" href="#p-${p.sku}"><div class="foto"><img src="img/cut_${p.sku}.webp" alt="${esc(p.nome+' '+p.nome2)}" loading="lazy"></div><div class="txt"><h3>${esc(p.nome)}<small>${esc(p.nome2)}</small></h3><div class="linha">${precoHtml(p.preco)}${idadeHtml(p.idade)}</div></div></a>`}
+
+const HIST=`<p>A infância é feita de pequenas descobertas.</p>
+<p>Uma peça que se encaixa. Uma torre que fica em pé depois de algumas tentativas. Um bichinho que ganha nome, uma receita imaginária, um passeio que transforma o chão da sala em um mundo inteiro.</p>
+<p>A Piccolo Play nasceu para dar espaço a esses momentos.</p>
+<p>Somos a linha de brinquedos da Piccolo dedicada ao brincar com as mãos, com curiosidade e com imaginação. Acreditamos naquela brincadeira em que a criança participa de verdade: escolhe, experimenta, monta, desmonta e inventa o que acontece depois.</p>
+<p>Um leão pode ser o guardião de uma floresta ou um amigo que precisa de ajuda. Uma pequena cozinha pode preparar um almoço para a família inteira. Cada brinquedo é um ponto de partida, e a criança dá continuidade à história.</p>
+<p>Nossos brinquedos convidam a explorar formas, cores, encaixes, movimentos e equilíbrio. São oportunidades para exercitar a atenção, a coordenação e a autonomia enquanto a diversão acontece, no ritmo de cada criança.</p>
+<p>Também são um convite à presença. Sentar no chão, construir alguma coisa juntos, ouvir uma história inventada na hora e compartilhar a alegria de uma descoberta.</p>
+<p>Produzimos nossos brinquedos por impressão 3D, sob encomenda, camada por camada. E encontramos nesse processo uma conexão com a própria infância: cada tentativa, cada experiência e cada pequena conquista fazem parte de algo que está sendo construído.</p>
+<p>É esse o sentido da nossa assinatura.</p>
+<p class="assina">Piccolo Play.</p><p class="assina2">Desenvolvimento em cada camada.</p>`;
+
+let filtro={fam:null,idade:null};
+function home(){
+  const app=document.getElementById('app');
+  app.innerHTML=`
+<section class="heroi" id="inicio">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Brinquedos impressos em 3D · Petrópolis, RJ</p>
+      <h1 style="margin-top:14px">A infância é feita de pequenas descobertas.<em>Brinquedos para montar, encaixar, equilibrar e inventar o que acontece depois.</em></h1>
+      <p class="lead">Cada peça é produzida sob encomenda, camada por camada, e chega pronta para virar a próxima história da sua casa.</p>
+      <div class="acoes"><a class="btn" href="#brinquedos">Conhecer os brinquedos <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn suave" href="#historia">Nossa história</a></div>
+    </div>
+    <div class="palco" aria-hidden="true">
+      <div class="blob"></div><div class="blob2"></div><div class="mesa"></div>
+      <img class="t1" src="img/cut_015.webp" alt=""><img class="t2" src="img/cut_004.webp" alt=""><img class="t3" src="img/cut_002.webp" alt=""><img class="t4" src="img/cut_009.webp" alt="">
+      <svg class="rab" style="left:2%;top:40%;width:34px;height:34px;stroke:#C98870" viewBox="0 0 40 40"><path d="M20 34C8 25 4 18 7 12c3-5 10-5 13 1 3-6 10-6 13-1 3 6-1 13-13 22z"/></svg>
+      <svg class="rab" style="right:4%;top:50%;width:30px;height:44px;stroke:#98A888" viewBox="0 0 44 60"><path d="M22 58V12"/><path d="M22 34c-10-2-15-9-14-18 9 1 14 7 14 18zM22 26c8-3 12-9 11-17-8 1-12 7-11 17z"/></svg>
+      <svg class="rab" style="left:46%;top:2%;width:22px;height:22px;stroke:#90A8B5" viewBox="0 0 24 24"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>
+    </div>
+  </div>
+</section>
+
+<section id="colecoes">
+  <div class="wrap">
+    <div class="cab"><p class="eyebrow">Coleções</p><h2>Cinco jeitos de brincar de verdade</h2><p>Cada coleção nasce de um gesto da infância: empurrar, montar, encaixar, cozinhar, molhar.</p></div>
+    <div class="colecoes">${FAM.map(f=>{const n=PRODUTOS.filter(p=>p.familia===f.n).length;return `<a class="col ${f.cls}" href="#c-${f.id}"><img src="img/cut_${f.img}.webp" alt=""><h3>${f.n}</h3><small>${f.s}</small><span class="n">${n} ${n===1?'BRINQUEDO':'BRINQUEDOS'}</span></a>`}).join('')}</div>
+  </div>
+</section>
+
+<section id="brinquedos">
+  <div class="wrap">
+    <div class="cab"><p class="eyebrow">Brinquedos</p><h2>Escolha pela fase da criança</h2><p>Toque em um brinquedo para ver a imagem grande, o que ele desenvolve e as cores disponíveis.</p></div>
+    <div class="filtros" id="filtros"></div>
+    <div class="grade" id="grade"></div>
+  </div>
+</section>
+
+<section class="historia" id="historia">
+  <div class="wrap">
+    <div><p class="eyebrow">Nossa história</p><h2 style="margin-top:10px">Por que o Piccolo Play existe</h2>${HIST}</div>
+    <div class="varal" aria-hidden="true">
+      <figure class="polaroid"><img src="img/alt_001b.webp" alt=""><figcaption>Uma torre que fica em pé depois de algumas tentativas</figcaption></figure>
+      <figure class="polaroid"><img src="img/alt_011a.webp" alt=""><figcaption>Um almoço para a família inteira</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="como">
+  <div class="wrap">
+    <div class="cab"><p class="eyebrow">Como encomendar</p><h2>Do seu WhatsApp para a impressora</h2><p>Tudo é feito sob encomenda. Por isso cada brinquedo sai na cor que você escolheu.</p></div>
+    <div class="passos">
+      <div class="passo"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h7"/><circle cx="18" cy="16" r="3"/></svg></div><span class="num">PASSO 1</span><h3>Escolha</h3><p>Navegue pelas coleções, veja os benefícios e escolha a cor.</p></div>
+      <div class="passo"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.2L4 21l1.8-5.4A8 8 0 1 1 21 12z"/></svg></div><span class="num">PASSO 2</span><h3>Chame no WhatsApp</h3><p>O botão já manda a mensagem pronta com o brinquedo e a cor. A gente confirma o prazo.</p></div>
+      <div class="passo"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 16V8l8-4 8 4v8l-8 4z"/><path d="M4 8l8 4 8-4M12 12v8"/></svg></div><span class="num">PASSO 3</span><h3>A gente produz</h3><p>Impressão 3D camada por camada, acabamento e saquinho de pano com cartão.</p></div>
+      <div class="passo"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12l9-8 9 8M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div><span class="num">PASSO 4</span><h3>Retire ou receba</h3><p>Envio em até 3 dias úteis, ou retirada na loja em Petrópolis. Pix, cartão na loja ou link.</p></div>
+    </div>
+  </div>
+</section>`;
+  filtros(); grade();
+}
+function filtros(){
+  const el=document.getElementById('filtros');
+  el.innerHTML=`<span class="rot">Coleção</span>`+[{id:null,n:'Todas'},...FAM].map(f=>`<button class="chip" data-fam="${f.id??''}" aria-pressed="${filtro.fam===f.id}">${f.n}</button>`).join('')
+   +`<span class="rot" style="margin-left:12px">Idade</span>`+[null,...IDADES].map(i=>`<button class="chip" data-idade="${i??''}" aria-pressed="${filtro.idade===i}">${i??'Todas'}</button>`).join('');
+  el.querySelectorAll('[data-fam]').forEach(b=>b.onclick=()=>{filtro.fam=b.dataset.fam||null;filtros();grade()});
+  el.querySelectorAll('[data-idade]').forEach(b=>b.onclick=()=>{filtro.idade=b.dataset.idade||null;filtros();grade()});
+}
+function grade(){
+  const g=document.getElementById('grade');
+  const ps=PRODUTOS.filter(p=>(!filtro.fam||famDe(p.familia).id===filtro.fam)&&(!filtro.idade||p.idade===filtro.idade));
+  g.innerHTML=ps.length?ps.map(cardHtml).join(''):`<p class="vazio">Nenhum brinquedo com essa combinação ainda. Fale com a gente no WhatsApp que a gente ajuda a escolher.</p>`;
+}
+
+function produto(sku){
+  const p=PRODUTOS.find(x=>x.sku===sku); if(!p){location.hash='#brinquedos';return}
+  const f=famDe(p.familia);
+  const fotos=[{src:`img/cena_${sku}.webp`,cls:'',alt:'Foto do brinquedo'},...p.galeria.map(g=>({src:'img/'+g.img,cls:'contem',alt:g.leg})),{src:`img/cut_${sku}.webp`,cls:'cut',alt:'Brinquedo recortado'},{src:`img/ficha_${sku}.webp`,cls:'contem',alt:'Ficha do brinquedo'}];
+  let cor=p.escolha?null:undefined;
+  const app=document.getElementById('app');
+  const relac=PRODUTOS.filter(x=>x.familia===p.familia&&x.sku!==sku).slice(0,4);
+  app.innerHTML=`<section class="produto"><div class="wrap">
+  <a class="volta" href="#brinquedos"><svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Todos os brinquedos</a>
+  <div class="prod">
+    <div class="visor">
+      <div class="grande"><img id="foto" src="${fotos[0].src}" alt="${esc(p.nome+' '+p.nome2)}"><span class="selo">Imagem ilustrativa</span></div>
+      <div class="minis" id="minis">${fotos.map((x,i)=>`<button aria-pressed="${i===0}" data-i="${i}" aria-label="${esc(x.alt)}"><img src="${x.src}" alt="" class="${x.cls}"></button>`).join('')}</div>
+    </div>
+    <div class="info">
+      <div class="meta"><span class="sku">PIC-PLAY-${sku}</span>${idadeHtml(p.idade)}<a class="chip" href="#c-${f.id}" style="text-decoration:none">${f.n}</a></div>
+      <h1>${esc(p.nome)}<em>${esc(p.nome2)}</em></h1>
+      <p class="desc">${esc(p.desc)}</p>
+      <div class="bloco"><h3>O que ele desenvolve</h3><div class="bens">${p.beneficios.map(b=>`<div class="ben"><div class="ic"><svg viewBox="0 0 24 24">${icone(b)}</svg></div><p>${esc(b)}</p></div>`).join('')}</div></div>
+      ${p.cores.length?`<div class="bloco"><h3>${p.escolha?'Escolha a cor':'Cores do conjunto'}</h3><div class="cores" id="cores">${p.cores.map(c=>`<button class="cor ${p.escolha?'':'fixa'}" data-cor="${esc(c.n)}" aria-pressed="false" ${p.escolha?'':'disabled'}><i style="background:${c.hex}"></i>${esc(c.n)}</button>`).join('')}</div>${p.nota?`<p class="nota">${esc(p.nota)}</p>`:''}</div>`:(p.nota?`<p class="nota" style="margin-top:20px">${esc(p.nota)}</p>`:'')}
+      <div class="compra">
+        <div class="topo2"><span class="preco"><small>PREÇO</small>R$ ${p.preco.split(',')[0]}<sup>,${p.preco.split(',')[1]}</sup></span><span class="enc"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>Produzido sob encomenda</span></div>
+        <a class="btn zap" id="zap" href="${zapLink(p)}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.2L4 21l1.8-5.4A8 8 0 1 1 21 12z"/></svg>Quero este</a>
+        <p class="msg" id="msg">${p.escolha?'Escolha uma cor acima e a mensagem do WhatsApp já vai pronta.':'Abre o WhatsApp com a mensagem pronta. Envio em até 3 dias úteis.'}</p>
+      </div>
+      <details><summary>Detalhes</summary><div class="det"><div><b>Dimensões</b><span>${esc(p.dim)}</span></div><div><b>Material</b><span>${esc(p.mat)}</span></div><div><b>Conteúdo</b><span>${esc(p.cont)}</span></div><div><b>Prazo</b><span>Envio em até 3 dias úteis</span></div></div></details>
+      <a class="ficha-link" href="#" id="verficha"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 9h8M8 13h5"/></svg>Ver a ficha completa</a>
+    </div>
+  </div>
+  ${relac.length?`<div class="relac"><h2>Da mesma coleção</h2><div class="grade">${relac.map(cardHtml).join('')}</div></div>`:''}
+</div></section>`;
+  const foto=document.getElementById('foto');
+  document.querySelectorAll('#minis button').forEach(b=>b.onclick=()=>{const x=fotos[+b.dataset.i];foto.src=x.src;foto.className=x.cls;document.querySelectorAll('#minis button').forEach(o=>o.setAttribute('aria-pressed',o===b))});
+  if(p.escolha){document.querySelectorAll('#cores .cor').forEach(b=>b.onclick=()=>{cor=b.dataset.cor;document.querySelectorAll('#cores .cor').forEach(o=>o.setAttribute('aria-pressed',o===b));document.getElementById('zap').href=zapLink(p,cor);document.getElementById('msg').textContent=`Mensagem pronta: "Quero o ${p.nome} ${p.nome2} na cor ${cor}". Envio em até 3 dias úteis.`})}
+  document.getElementById('verficha').onclick=e=>{e.preventDefault();const lb=document.createElement('div');lb.className='lb';lb.innerHTML=`<img src="img/ficha_${sku}.webp" alt="Ficha ${esc(p.nome)}"><button aria-label="Fechar">×</button>`;lb.onclick=()=>lb.remove();document.body.appendChild(lb)};
+  window.scrollTo({top:0,behavior:'instant'});
+}
+
+function rota(){
+  const h=location.hash.replace('#','');
+  if(h.startsWith('p-')){produto(h.slice(2));return}
+  if(!document.getElementById('grade')){home()}
+  if(h.startsWith('c-')){const f=FAM.find(x=>x.id===h.slice(2));filtro={fam:f?f.id:null,idade:null};filtros();grade();document.getElementById('brinquedos').scrollIntoView();return}
+  const el=h&&document.getElementById(h); if(el)el.scrollIntoView();
+}
+window.addEventListener('hashchange',rota);
+home(); rota();
+</script>

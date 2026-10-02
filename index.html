@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Piccolo: brechó infantil e multimarcas em Petrópolis, RJ. Roupas novas e seminovas e a linha de brinquedos Piccolo Play.">
+<meta name="theme-color" content="#FAF5EE">
+<link rel="icon" href="play/img/icone.png" type="image/png">
+<title>Piccolo · Brechó Infantil e Multimarcas</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@600;700;800&family=Fredoka:wght@500&display=swap">
+<style>
+:root{--creme:#FAF5EE;--ameixa:#5E4650;--ameixa2:#8A7480;--salvia:#8C9C7A;--salvia-esc:#6F7F5E;--linha:#EADFCF;--branco:#FFFDF9;--zap:#4FA86A}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;background:var(--creme);color:var(--ameixa);font-family:Nunito,system-ui,sans-serif;display:grid;place-items:center;padding:32px 20px}
+main{width:min(720px,100%);text-align:center;display:grid;gap:26px;justify-items:center}
+.logo{width:min(300px,70vw)}
+h1{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:clamp(30px,5vw,44px);line-height:1.1;color:var(--salvia-esc)}
+p{font-size:18px;color:var(--ameixa2);max-width:50ch}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;width:100%;margin-top:8px}
+a.card{display:grid;gap:10px;background:var(--branco);border-radius:26px;padding:26px 22px;text-decoration:none;color:inherit;box-shadow:0 18px 40px -26px rgba(80,50,30,.45);transition:transform .15s}
+a.card:hover{transform:translateY(-3px)}
+a.card img{height:150px;object-fit:contain;margin-inline:auto}
+a.card b{font-family:Fraunces,Georgia,serif;font-size:24px;color:var(--salvia-esc)}
+a.card span{font-size:15px;color:var(--ameixa2)}
+.play{display:inline-flex;gap:5px;justify-content:center}
+.play i{width:36px;height:34px;border-radius:10px 12px 9px 12px;display:grid;place-items:center;font-family:Fredoka,sans-serif;font-style:normal;font-size:22px;color:#FBF8F1}
+.play i:nth-child(1){background:#98A888;transform:rotate(-4deg)}.play i:nth-child(2){background:#E6BE94;transform:rotate(3deg)}.play i:nth-child(3){background:#90A8B5;transform:rotate(-2deg)}.play i:nth-child(4){background:#C98870;transform:rotate(4deg)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--salvia);color:#fff;font-weight:800;text-decoration:none;padding:12px 22px;border-radius:999px}
+.btn.zap{background:var(--zap)}
+footer{font-size:14px;color:var(--ameixa2);border-top:1px solid var(--linha);padding-top:18px;width:100%}
+footer a{color:inherit;font-weight:800}
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="play/img/logo.png" alt="Piccolo">
+  <h1>Brechó infantil e multimarcas, em Petrópolis</h1>
+  <p>Roupas novas e seminovas do RN aos 12 anos, com envio para todo o Brasil, e a nossa linha de brinquedos feitos em 3D.</p>
+  <div class="cards">
+    <a class="card" href="https://instagram.com/piccolo.brecho" target="_blank" rel="noopener"><svg viewBox="0 0 64 64" style="height:150px;margin-inline:auto;fill:none;stroke:#8C9C7A;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round"><path d="M32 14a5 5 0 1 1 5-5"/><path d="M32 14v6L8 38c-3 2-2 7 2 7h44c4 0 5-5 2-7L32 20"/><path d="M20 45v6a12 12 0 0 0 24 0v-6"/></svg><b>Roupas e seminovos</b><span>As peças novas chegam primeiro no Instagram @piccolo.brecho</span></a>
+    <a class="card" href="play/"><img src="play/img/cut_015.webp" alt=""><span class="play"><i>P</i><i>L</i><i>A</i><i>Y</i></span><b>Piccolo Play</b><span>Brinquedos impressos em 3D, sob encomenda</span></a>
+  </div>
+  <a class="btn zap" href="https://wa.me/5524992170426?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Piccolo." target="_blank" rel="noopener">Falar no WhatsApp</a>
+  <footer>Rua do Imperador, 970, loja 07 · Centro · Petrópolis, RJ · <a href="https://instagram.com/piccolo.brecho" target="_blank" rel="noopener">@piccolo.brecho</a></footer>
+</main>
+</body>
+</html>

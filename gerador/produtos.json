@@ -1,0 +1,756 @@
+[
+ {
+  "sku": "001",
+  "nome": "Gira",
+  "nome2": "Formas",
+  "familia": "Encaixar & Equilibrar",
+  "idade": "3 a 6 anos",
+  "preco": "249,90",
+  "desc": "Gire, encaixe e empilhe formas e cores em uma brincadeira cheia de novas combinações.",
+  "beneficios": [
+   "Estimula a coordenação motora fina",
+   "Ajuda a reconhecer formas e cores",
+   "Desenvolve a concentração",
+   "Design lúdico e minimalista"
+  ],
+  "dim": "20 × 7 × 13,5 cm",
+  "mat": "PLA + PETG",
+  "cont": "1 base + 3 postes + 18 formas",
+  "cores": [],
+  "escolha": false,
+  "nota": "Composição fixa de cores",
+  "galeria": [
+   {
+    "img": "alt_001a.webp",
+    "leg": "Peças soltas"
+   },
+   {
+    "img": "alt_001b.webp",
+    "leg": "Montando"
+   }
+  ]
+ },
+ {
+  "sku": "002",
+  "nome": "Melancia",
+  "nome2": "Equilibrista",
+  "familia": "Encaixar & Equilibrar",
+  "idade": "3 a 6 anos",
+  "preco": "139,90",
+  "desc": "Monte a melancia peça por peça e encontre o equilíbrio perfeito sem deixar a brincadeira cair.",
+  "beneficios": [
+   "Trabalha o equilíbrio e a paciência",
+   "Desenvolve a noção de tamanho e ordem",
+   "Estimula a coordenação motora",
+   "Design lúdico e minimalista"
+  ],
+  "dim": "21 × 10,5 × 3 cm",
+  "mat": "PLA",
+  "cont": "6 peças: verde, branca e 4 vermelhas",
+  "cores": [],
+  "escolha": false,
+  "nota": "Composição fixa de cores",
+  "galeria": [
+   {
+    "img": "alt_002a.webp",
+    "leg": "Peça por peça"
+   },
+   {
+    "img": "alt_002b.webp",
+    "leg": "Outra montagem"
+   }
+  ]
+ },
+ {
+  "sku": "003",
+  "nome": "Encaixa",
+  "nome2": "Formas",
+  "familia": "Encaixar & Equilibrar",
+  "idade": "3 a 6 anos",
+  "preco": "99,90",
+  "desc": "Três formas, três encaixes e muitas descobertas em uma brincadeira simples e colorida.",
+  "beneficios": [
+   "Estimula a coordenação motora",
+   "Desenvolve o raciocínio lógico",
+   "Ajuda a reconhecer formas e cores",
+   "Design lúdico e minimalista"
+  ],
+  "dim": "19,5 × 7 × 3,5 cm",
+  "mat": "PLA",
+  "cont": "1 base + 3 formas",
+  "cores": [
+   {
+    "n": "Branco",
+    "hex": "#FFFFFF"
+   },
+   {
+    "n": "Vermelho",
+    "hex": "#D9574D"
+   },
+   {
+    "n": "Verde",
+    "hex": "#62A86B"
+   },
+   {
+    "n": "Amarelo",
+    "hex": "#F2CF5E"
+   }
+  ],
+  "escolha": false,
+  "nota": "Composição fixa de cores",
+  "galeria": []
+ },
+ {
+  "sku": "004",
+  "nome": "Leão",
+  "nome2": "Monta & Brinca",
+  "familia": "Monta & Brinca",
+  "idade": "3 a 6 anos",
+  "preco": "49,90",
+  "desc": "Um quebra-cabeça em 3D para montar, brincar e desenvolver habilidades de forma divertida.",
+  "beneficios": [
+   "Desenvolve o raciocínio espacial",
+   "Estimula a coordenação motora fina",
+   "Incentiva o faz de conta",
+   "Design lúdico e minimalista"
+  ],
+  "dim": "13 × 9 × 1,5 cm",
+  "mat": "PLA",
+  "cont": "1 Leão Monta & Brinca",
+  "cores": [
+   {
+    "n": "Azul",
+    "hex": "#9CC3D6"
+   },
+   {
+    "n": "Rosa",
+    "hex": "#EDB3C0"
+   },
+   {
+    "n": "Amarelo",
+    "hex": "#F0D27A"
+   },
+   {
+    "n": "Laranja",
+    "hex": "#EE9E6C"
+   },
+   {
+    "n": "Branco",
+    "hex": "#FFFFFF"
+   }
+  ],
+  "escolha": true,
+  "nota": "Escolha 1 cor",
+  "galeria": []
+ },
+ {
+  "sku": "005",
+  "nome": "Girafa",
+  "nome2": "Monta & Brinca",
+  "familia": "Monta & Brinca",
+  "idade": "3 a 6 anos",
+  "preco": "29,90",
+  "desc": "Monte sua girafa, desmonte e comece de novo — cada peça vira uma nova descoberta.",
+  "beneficios": [
+   "Desenvolve o raciocínio espacial",
+   "Estimula a coordenação motora fina",
+   "Incentiva o faz de conta",
+   "Design lúdico e minimalista"
+  ],
+  "dim": "8 × 11 × 0,5 cm",
+  "mat": "PLA",
+  "cont": "1 Girafa Monta & Brinca",
+  "cores": [
+   {
+    "n": "Azul",
+    "hex": "#9CC3D6"
+   },
+   {
+    "n": "Rosa",
+    "hex": "#EDB3C0"
+   },
+   {
+    "n": "Amarelo",
+    "hex": "#F0D27A"
+   },
+   {
+    "n": "Laranja",
+    "hex": "#EE9E6C"
+   },
+   {
+    "n": "Branco",
+    "hex": "#FFFFFF"
+   }
+  ],
+  "escolha": true,
+  "nota": "Escolha 1 cor",
+  "galeria": []
+ },
+ {
+  "sku": "006",
+  "nome": "Dino",
+  "nome2": "Equilibra",
+  "familia": "Encaixar & Equilibrar",
+  "idade": "3 a 6 anos",
+  "preco": "79,90",
+  "desc": "Empilhe os dinossauros sobre a base e descubra até onde o equilíbrio da pré-história consegue chegar.",
+  "beneficios": [
+   "Trabalha o equilíbrio e a paciência",
+   "Estimula a coordenação motora fina",
+   "Diverte toda a família",
+   "Incentiva o faz de conta"
+  ],
+  "dim": "Base 12 × 5 × 2 cm",
+  "mat": "PLA",
+  "cont": "1 base + 10 dinossauros",
+  "cores": [
+   {
+    "n": "Preto",
+    "hex": "#403A3C"
+   },
+   {
+    "n": "Amarelo",
+    "hex": "#EFC33F"
+   },
+   {
+    "n": "Vinho",
+    "hex": "#8E2B40"
+   },
+   {
+    "n": "Verde",
+    "hex": "#6F7A3E"
+   },
+   {
+    "n": "Azul",
+    "hex": "#3F78B8"
+   }
+  ],
+  "escolha": false,
+  "nota": "Composição fixa de cores",
+  "galeria": []
+ },
+ {
+  "sku": "007",
+  "nome": "Encaixa",
+  "nome2": "Tamanhos",
+  "familia": "Encaixar & Equilibrar",
+  "idade": "3 a 6 anos",
+  "preco": "74,90",
+  "desc": "Do maior ao menor, compare, organize e encaixe as peças explorando diferentes tamanhos.",
+  "beneficios": [
+   "Desenvolve a noção de tamanho e ordem",
+   "Estimula a coordenação motora fina",
+   "Desenvolve o raciocínio lógico",
+   "Design lúdico e minimalista"
+  ],
+  "dim": "13,4 × 4 × 4 cm",
+  "mat": "PLA",
+  "cont": "1 base + peças de vários tamanhos",
+  "cores": [
+   {
+    "n": "Verde",
+    "hex": "#A9BF8E"
+   },
+   {
+    "n": "Azul",
+    "hex": "#9CC3D6"
+   },
+   {
+    "n": "Rosa",
+    "hex": "#EDB3C0"
+   },
+   {
+    "n": "Amarelo",
+    "hex": "#F0D27A"
+   },
+   {
+    "n": "Branco",
+    "hex": "#FFFFFF"
+   }
+  ],
+  "escolha": true,
+  "nota": "Base sempre preta · escolha 1 cor",
+  "galeria": []
+ },
+ {
+  "sku": "008",
+  "nome": "Elefante",
+  "nome2": "Monta & Brinca",
+  "familia": "Monta & Brinca",
+  "idade": "3 a 6 anos",
+  "preco": "49,90",
+  "desc": "Um elefante em peças para montar, desmontar e levar a imaginação para passear.",
+  "beneficios": [
+   "Desenvolve o raciocínio espacial",
+   "Estimula a coordenação motora fina",
+   "Incentiva o faz de conta",
+   "Design lúdico e minimalista"
+  ],
+  "dim": "14 × 10,5 × 1,5 cm",
+  "mat": "PLA",
+  "cont": "1 Elefante Monta & Brinca",
+  "cores": [
+   {
+    "n": "Azul",
+    "hex": "#9CC3D6"
+   },
+   {
+    "n": "Rosa",
+    "hex": "#EDB3C0"
+   },
+   {
+    "n": "Amarelo",
+    "hex": "#F0D27A"
+   },
+   {
+    "n": "Laranja",
+    "hex": "#EE9E6C"
+   },
+   {
+    "n": "Branco",
+    "hex": "#FFFFFF"
+   },
+   {
+    "n": "Verde",
+    "hex": "#A9BF8E"
+   }
+  ],
+  "escolha": true,
+  "nota": "Escolha 1 cor",
+  "galeria": []
+ },
+ {
+  "sku": "009",
+  "nome": "Baleia",
+  "nome2": "Splash",
+  "familia": "Água & Movimento",
+  "idade": "1 a 3 anos",
+  "preco": "49,90",
+  "desc": "Uma pequena baleia feita para transformar a hora da água em brincadeira.",
+  "beneficios": [
+   "Transforma o banho em brincadeira",
+   "Estimula a exploração sensorial",
+   "Incentiva o faz de conta",
+   "Design lúdico e minimalista"
+  ],
+  "dim": "8,6 × 5,1 × 5,4 cm",
+  "mat": "PLA",
+  "cont": "1 Baleia Splash · tamanho P ou G",
+  "cores": [
+   {
+    "n": "Azul",
+    "hex": "#9CC3D6"
+   },
+   {
+    "n": "Verde",
+    "hex": "#A9BF8E"
+   },
+   {
+    "n": "Roxo",
+    "hex": "#B7A3CF"
+   },
+   {
+    "n": "Amarelo",
+    "hex": "#F0D27A"
+   },
+   {
+    "n": "Laranja",
+    "hex": "#EE9E6C"
+   },
+   {
+    "n": "Rosa",
+    "hex": "#EDB3C0"
+   }
+  ],
+  "escolha": true,
+  "nota": "Escolha 1 cor · tamanho P é mais fácil para os menores",
+  "galeria": []
+ },
+ {
+  "sku": "010",
+  "nome": "Trilha",
+  "nome2": "das Cores",
+  "familia": "Encaixar & Equilibrar",
+  "idade": "3 a 6 anos",
+  "preco": "89,90",
+  "desc": "Mova cada peça pelo seu caminho e percorra curvas, zigue-zagues e trilhas cheias de cor.",
+  "beneficios": [
+   "Estimula a coordenação motora fina",
+   "Desenvolve a concentração",
+   "Ajuda a reconhecer as cores",
+   "Design lúdico e minimalista"
+  ],
+  "dim": "17 × 16,5 × 8 cm",
+  "mat": "PETG",
+  "cont": "1 painel com peças móveis",
+  "cores": [
+   {
+    "n": "Bege",
+    "hex": "#DCC29C"
+   },
+   {
+    "n": "Laranja",
+    "hex": "#F0A04B"
+   },
+   {
+    "n": "Vermelho",
+    "hex": "#D9443A"
+   },
+   {
+    "n": "Amarelo",
+    "hex": "#EBD36A"
+   },
+   {
+    "n": "Verde",
+    "hex": "#5E9E4A"
+   }
+  ],
+  "escolha": false,
+  "nota": "Composição fixa de cores",
+  "galeria": []
+ },
+ {
+  "sku": "011",
+  "nome": "Pequeno Chef",
+  "nome2": "Massa Divertida",
+  "familia": "Faz de Conta",
+  "idade": "3 a 6 anos",
+  "preco": "249,90",
+  "desc": "Um convite para preparar receitas imaginárias, servir pratos especiais e transformar o faz de conta em uma deliciosa brincadeira.",
+  "beneficios": [
+   "Incentiva o faz de conta",
+   "Desenvolve a imaginação",
+   "Estimula a coordenação motora",
+   "Aproxima a criança da cozinha"
+  ],
+  "dim": "Caixa 10,7 × 7,7 × 13,1 cm",
+  "mat": "PLA",
+  "cont": "Massa, prato, caixa, molho, garfo e 2 tomates",
+  "cores": [],
+  "escolha": false,
+  "nota": "Composição fixa de cores",
+  "galeria": [
+   {
+    "img": "alt_011a.webp",
+    "leg": "Da caixa para a tigela"
+   }
+  ]
+ },
+ {
+  "sku": "012",
+  "nome": "Tricerátopo",
+  "nome2": "Monta & Brinca",
+  "familia": "Monta & Brinca",
+  "idade": "3 a 6 anos",
+  "preco": "49,90",
+  "desc": "Monte seu tricerátopo peça por peça e dê vida a novas aventuras jurássicas.",
+  "beneficios": [
+   "Desenvolve o raciocínio espacial",
+   "Estimula a coordenação motora fina",
+   "Incentiva o faz de conta",
+   "Design lúdico e minimalista"
+  ],
+  "dim": "16 × 9 × 1,5 cm",
+  "mat": "PLA",
+  "cont": "1 Tricerátopo Monta & Brinca",
+  "cores": [
+   {
+    "n": "Azul",
+    "hex": "#9CC3D6"
+   },
+   {
+    "n": "Rosa",
+    "hex": "#EDB3C0"
+   },
+   {
+    "n": "Amarelo",
+    "hex": "#F0D27A"
+   },
+   {
+    "n": "Laranja",
+    "hex": "#EE9E6C"
+   },
+   {
+    "n": "Branco",
+    "hex": "#FFFFFF"
+   },
+   {
+    "n": "Verde",
+    "hex": "#A9BF8E"
+   }
+  ],
+  "escolha": true,
+  "nota": "Escolha 1 cor",
+  "galeria": []
+ },
+ {
+  "sku": "013",
+  "nome": "Raposa",
+  "nome2": "Monta & Brinca",
+  "familia": "Monta & Brinca",
+  "idade": "3 a 6 anos",
+  "preco": "69,90",
+  "desc": "Uma raposinha para montar, desmontar e acompanhar histórias criadas pela imaginação.",
+  "beneficios": [
+   "Desenvolve o raciocínio espacial",
+   "Estimula a coordenação motora fina",
+   "Incentiva o faz de conta",
+   "Design lúdico e minimalista"
+  ],
+  "dim": "19 × 16 × 1,5 cm",
+  "mat": "PLA",
+  "cont": "1 Raposa Monta & Brinca",
+  "cores": [
+   {
+    "n": "Azul",
+    "hex": "#9CC3D6"
+   },
+   {
+    "n": "Rosa",
+    "hex": "#EDB3C0"
+   },
+   {
+    "n": "Amarelo",
+    "hex": "#F0D27A"
+   },
+   {
+    "n": "Laranja",
+    "hex": "#EE9E6C"
+   },
+   {
+    "n": "Branco",
+    "hex": "#FFFFFF"
+   }
+  ],
+  "escolha": true,
+  "nota": "Escolha 1 cor",
+  "galeria": []
+ },
+ {
+  "sku": "014",
+  "nome": "Trio",
+  "nome2": "Sobre Rodas",
+  "familia": "Sobre Rodas",
+  "idade": "2 a 4 anos",
+  "preco": "149,90",
+  "desc": "Ganso, coelho e cachorro juntos para uma brincadeira que vai longe sobre rodas.",
+  "beneficios": [
+   "Estimula a coordenação motora",
+   "Incentiva o faz de conta",
+   "Desenvolve a imaginação",
+   "Três amigos para brincar junto"
+  ],
+  "dim": "3 peças de 10 a 14,5 cm",
+  "mat": "PLA",
+  "cont": "Ganso, Coelho e Cachorro",
+  "cores": [
+   {
+    "n": "Madeira",
+    "hex": "#E3CFAE"
+   },
+   {
+    "n": "Branco",
+    "hex": "#FFFFFF"
+   },
+   {
+    "n": "Oliva",
+    "hex": "#8C8466"
+   },
+   {
+    "n": "Preto",
+    "hex": "#403A3C"
+   }
+  ],
+  "escolha": false,
+  "nota": "Composição fixa de cores",
+  "galeria": []
+ },
+ {
+  "sku": "015",
+  "nome": "Ganso",
+  "nome2": "Sobre Rodas",
+  "familia": "Sobre Rodas",
+  "idade": "2 a 4 anos",
+  "preco": "59,90",
+  "desc": "Um companheiro divertido para empurrar, passear e inventar histórias.",
+  "beneficios": [
+   "Estimula a coordenação motora",
+   "Incentiva o faz de conta",
+   "Desenvolve a imaginação",
+   "Design lúdico e minimalista"
+  ],
+  "dim": "13,6 × 4,5 × 14,5 cm",
+  "mat": "PLA",
+  "cont": "1 Ganso Sobre Rodas",
+  "cores": [
+   {
+    "n": "Azul",
+    "hex": "#9CC3D6"
+   },
+   {
+    "n": "Rosa",
+    "hex": "#EDB3C0"
+   },
+   {
+    "n": "Amarelo",
+    "hex": "#F0D27A"
+   },
+   {
+    "n": "Laranja",
+    "hex": "#EE9E6C"
+   },
+   {
+    "n": "Branco",
+    "hex": "#FFFFFF"
+   },
+   {
+    "n": "Preto",
+    "hex": "#403A3C"
+   }
+  ],
+  "escolha": true,
+  "nota": "Escolha 1 cor",
+  "galeria": []
+ },
+ {
+  "sku": "016",
+  "nome": "Coelho",
+  "nome2": "Sobre Rodas",
+  "familia": "Sobre Rodas",
+  "idade": "2 a 4 anos",
+  "preco": "59,90",
+  "desc": "Um coelhinho sobre rodas pronto para acompanhar pequenos passeios e grandes histórias.",
+  "beneficios": [
+   "Estimula a coordenação motora",
+   "Incentiva o faz de conta",
+   "Desenvolve a imaginação",
+   "Design lúdico e minimalista"
+  ],
+  "dim": "10,6 × 4,5 × 11,5 cm",
+  "mat": "PLA",
+  "cont": "1 Coelho Sobre Rodas",
+  "cores": [
+   {
+    "n": "Azul",
+    "hex": "#9CC3D6"
+   },
+   {
+    "n": "Rosa",
+    "hex": "#EDB3C0"
+   },
+   {
+    "n": "Amarelo",
+    "hex": "#F0D27A"
+   },
+   {
+    "n": "Laranja",
+    "hex": "#EE9E6C"
+   },
+   {
+    "n": "Branco",
+    "hex": "#FFFFFF"
+   },
+   {
+    "n": "Preto",
+    "hex": "#403A3C"
+   }
+  ],
+  "escolha": true,
+  "nota": "Escolha 1 cor",
+  "galeria": []
+ },
+ {
+  "sku": "017",
+  "nome": "Cachorro",
+  "nome2": "Sobre Rodas",
+  "familia": "Sobre Rodas",
+  "idade": "2 a 4 anos",
+  "preco": "59,90",
+  "desc": "Um cachorrinho sobre rodas para levar a brincadeira para onde a imaginação quiser.",
+  "beneficios": [
+   "Estimula a coordenação motora",
+   "Incentiva o faz de conta",
+   "Desenvolve a imaginação",
+   "Design lúdico e minimalista"
+  ],
+  "dim": "11,6 × 4,5 × 10 cm",
+  "mat": "PLA",
+  "cont": "1 Cachorro Sobre Rodas",
+  "cores": [
+   {
+    "n": "Azul",
+    "hex": "#9CC3D6"
+   },
+   {
+    "n": "Rosa",
+    "hex": "#EDB3C0"
+   },
+   {
+    "n": "Amarelo",
+    "hex": "#F0D27A"
+   },
+   {
+    "n": "Laranja",
+    "hex": "#EE9E6C"
+   },
+   {
+    "n": "Branco",
+    "hex": "#FFFFFF"
+   },
+   {
+    "n": "Preto",
+    "hex": "#403A3C"
+   }
+  ],
+  "escolha": true,
+  "nota": "Escolha 1 cor",
+  "galeria": []
+ },
+ {
+  "sku": "018",
+  "nome": "Carrinho",
+  "nome2": "Turbo Balão",
+  "familia": "Água & Movimento",
+  "idade": "6+ anos, com adulto",
+  "preco": "49,90",
+  "desc": "Um carrinho movido pela força do ar para transformar cada largada em uma brincadeira cheia de movimento e descobertas.",
+  "beneficios": [
+   "Mostra na prática a força do ar",
+   "Desperta a curiosidade científica",
+   "Estimula a coordenação motora",
+   "Brincadeira para fazer com um adulto"
+  ],
+  "dim": "10 × 8,5 × 4 cm",
+  "mat": "PLA",
+  "cont": "1 carrinho (balão não incluso)",
+  "cores": [
+   {
+    "n": "Azul",
+    "hex": "#9CC3D6"
+   },
+   {
+    "n": "Rosa",
+    "hex": "#EDB3C0"
+   },
+   {
+    "n": "Amarelo",
+    "hex": "#F0D27A"
+   },
+   {
+    "n": "Laranja",
+    "hex": "#EE9E6C"
+   },
+   {
+    "n": "Roxo",
+    "hex": "#B7A3CF"
+   },
+   {
+    "n": "Preto",
+    "hex": "#403A3C"
+   }
+  ],
+  "escolha": true,
+  "nota": "Escolha 1 cor",
+  "galeria": []
+ }
+]
