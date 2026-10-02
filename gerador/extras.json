@@ -1,0 +1,210 @@
+{
+ "nomes": {
+  "001": [
+   "Gira",
+   "Formas"
+  ],
+  "002": [
+   "Melancia",
+   "Equilibrista"
+  ],
+  "003": [
+   "Encaixa",
+   "Formas"
+  ],
+  "004": [
+   "Leão",
+   "Monta & Brinca"
+  ],
+  "005": [
+   "Girafa",
+   "Monta & Brinca"
+  ],
+  "006": [
+   "Dino",
+   "Equilibra"
+  ],
+  "007": [
+   "Encaixa",
+   "Tamanhos"
+  ],
+  "008": [
+   "Elefante",
+   "Monta & Brinca"
+  ],
+  "009": [
+   "Baleia",
+   "Splash"
+  ],
+  "010": [
+   "Trilha",
+   "das Cores"
+  ],
+  "011": [
+   "Pequeno Chef",
+   "Massa Divertida"
+  ],
+  "012": [
+   "Tricerátopo",
+   "Monta & Brinca"
+  ],
+  "013": [
+   "Raposa",
+   "Monta & Brinca"
+  ],
+  "014": [
+   "Trio",
+   "Sobre Rodas"
+  ],
+  "015": [
+   "Ganso",
+   "Sobre Rodas"
+  ],
+  "016": [
+   "Coelho",
+   "Sobre Rodas"
+  ],
+  "017": [
+   "Cachorro",
+   "Sobre Rodas"
+  ],
+  "018": [
+   "Carrinho",
+   "Turbo Balão"
+  ]
+ },
+ "cores_fixas": {
+  "001": {
+   "cores": [],
+   "nota": "Composição fixa de cores"
+  },
+  "002": {
+   "cores": [],
+   "nota": "Composição fixa de cores"
+  },
+  "003": {
+   "cores": [
+    {
+     "n": "Branco",
+     "hex": "#FFFFFF"
+    },
+    {
+     "n": "Vermelho",
+     "hex": "#D9574D"
+    },
+    {
+     "n": "Verde",
+     "hex": "#62A86B"
+    },
+    {
+     "n": "Amarelo",
+     "hex": "#F2CF5E"
+    }
+   ],
+   "nota": "Composição fixa de cores"
+  },
+  "006": {
+   "cores": [
+    {
+     "n": "Preto",
+     "hex": "#403A3C"
+    },
+    {
+     "n": "Amarelo",
+     "hex": "#EFC33F"
+    },
+    {
+     "n": "Vinho",
+     "hex": "#8E2B40"
+    },
+    {
+     "n": "Verde",
+     "hex": "#6F7A3E"
+    },
+    {
+     "n": "Azul",
+     "hex": "#3F78B8"
+    }
+   ],
+   "nota": "Composição fixa de cores"
+  },
+  "010": {
+   "cores": [
+    {
+     "n": "Bege",
+     "hex": "#DCC29C"
+    },
+    {
+     "n": "Laranja",
+     "hex": "#F0A04B"
+    },
+    {
+     "n": "Vermelho",
+     "hex": "#D9443A"
+    },
+    {
+     "n": "Amarelo",
+     "hex": "#EBD36A"
+    },
+    {
+     "n": "Verde",
+     "hex": "#5E9E4A"
+    }
+   ],
+   "nota": "Composição fixa de cores"
+  },
+  "011": {
+   "cores": [],
+   "nota": "Composição fixa de cores"
+  },
+  "014": {
+   "cores": [
+    {
+     "n": "Madeira",
+     "hex": "#E3CFAE"
+    },
+    {
+     "n": "Branco",
+     "hex": "#FFFFFF"
+    },
+    {
+     "n": "Oliva",
+     "hex": "#8C8466"
+    },
+    {
+     "n": "Preto",
+     "hex": "#403A3C"
+    }
+   ],
+   "nota": "Composição fixa de cores"
+  }
+ },
+ "galeria": {
+  "001": [
+   {
+    "img": "alt_001a.webp",
+    "leg": "Peças soltas"
+   },
+   {
+    "img": "alt_001b.webp",
+    "leg": "Montando"
+   }
+  ],
+  "002": [
+   {
+    "img": "alt_002a.webp",
+    "leg": "Peça por peça"
+   },
+   {
+    "img": "alt_002b.webp",
+    "leg": "Outra montagem"
+   }
+  ],
+  "011": [
+   {
+    "img": "alt_011a.webp",
+    "leg": "Da caixa para a tigela"
+   }
+  ]
+ }
+}

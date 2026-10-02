@@ -1,0 +1,32 @@
+name: Atualizar site a partir do Notion
+
+on:
+  schedule:
+    - cron: '0 8 * * *'        # todo dia às 5h (horário de Brasília)
+  workflow_dispatch:           # botão "Run workflow" para atualizar na hora
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Ler o Notion e gerar o site
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: |
+          python3 gerador/notion_sync.py
+          python3 gerador/build.py
+      - name: Publicar se algo mudou
+        run: |
+          git config user.name "Piccolo Play (automático)"
+          git config user.email "actions@users.noreply.github.com"
+          if git diff --quiet; then echo "Nada mudou no Notion."; exit 0; fi
+          git add -A
+          git commit -m "Atualiza o site com os dados do Notion ($(date -u +%Y-%m-%d))"
+          git push
