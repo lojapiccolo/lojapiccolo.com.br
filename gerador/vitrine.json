@@ -1,0 +1,68 @@
+[
+ {
+  "id": "exemplo_1",
+  "peca": "Moletom GAP",
+  "marca": "GAP",
+  "tamanho": "4",
+  "para": "Menina",
+  "preco": 59,
+  "estado": "Seminovo",
+  "foto": "img/brecho/exemplo_1.webp",
+  "exemplo": true
+ },
+ {
+  "id": "exemplo_2",
+  "peca": "Body Carter's (3 un.)",
+  "marca": "Carter's",
+  "tamanho": "12M",
+  "para": "Menino",
+  "preco": 49,
+  "estado": "Novo com etiqueta",
+  "foto": "img/brecho/exemplo_2.webp",
+  "exemplo": true
+ },
+ {
+  "id": "exemplo_3",
+  "peca": "Vestido Zara Kids",
+  "marca": "Zara Kids",
+  "tamanho": "6",
+  "para": "Menina",
+  "preco": 45,
+  "estado": "Seminovo",
+  "foto": "img/brecho/exemplo_3.webp",
+  "exemplo": true
+ },
+ {
+  "id": "exemplo_4",
+  "peca": "Jaqueta OshKosh",
+  "marca": "OshKosh",
+  "tamanho": "3",
+  "para": "Menino",
+  "preco": 79,
+  "estado": "Seminovo",
+  "foto": "img/brecho/exemplo_4.webp",
+  "exemplo": true
+ },
+ {
+  "id": "exemplo_5",
+  "peca": "Tênis Nike",
+  "marca": "Nike",
+  "tamanho": "27",
+  "para": "Unissex",
+  "preco": 89,
+  "estado": "Seminovo",
+  "foto": "img/brecho/exemplo_5.webp",
+  "exemplo": true
+ },
+ {
+  "id": "exemplo_6",
+  "peca": "Macacão Carter's",
+  "marca": "Carter's",
+  "tamanho": "RN",
+  "para": "Unissex",
+  "preco": 39,
+  "estado": "Novo com etiqueta",
+  "foto": "img/brecho/exemplo_6.webp",
+  "exemplo": true
+ }
+]
