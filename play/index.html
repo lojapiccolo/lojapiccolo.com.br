@@ -59,12 +59,12 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.05;letter-spac
 .nav a:hover{background:var(--creme2);color:var(--ameixa)}
 .btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:800;font-size:15px;padding:12px 20px;border-radius:999px;background:var(--salvia);color:#fff;box-shadow:var(--sombra);transition:transform .15s,background .15s}
 .btn:hover{transform:translateY(-1px);background:var(--salvia-esc)}
-.btn.zap{background:var(--zap)}
+.btn.zap{background:var(--zap)}.nav a.btn,.nav a.btn:hover{color:#fff}
 .btn.zap:hover{background:#3f9158}
 .btn.suave{background:var(--branco);color:var(--ameixa);box-shadow:0 0 0 1.5px var(--linha) inset}
 .btn.suave:hover{background:#fff}
 .btn svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-@media (max-width:760px){.nav a:not(.btn):not(.volta-piccolo){display:none}.nav .volta-piccolo{padding:8px 10px}.marca img{height:52px}.play span{width:34px;height:32px;font-size:20px}.topo .wrap{min-height:78px}}
+@media (max-width:760px){.nav a:not(.btn){display:none}.marca img{height:52px}.play{gap:4px}.play span{width:27px;height:25px;font-size:16px;border-radius:8px}.marca+.marca{margin-left:-10px}.topo .wrap{min-height:78px;gap:12px}}
 
 /* seções */
 section{padding-block:72px}
@@ -230,7 +230,7 @@ details[open] summary::after{content:"–"}
 <body>
 <header class="topo">
   <div class="wrap">
-    <a class="marca" href="../" aria-label="Voltar para o Piccolo" title="Voltar para o Piccolo"><img src="img/logo.png" alt="Piccolo"></a><a class="marca playlink" href="#inicio" aria-label="Piccolo Play, início"><span class="play"><span>P</span><span>L</span><span>A</span><span>Y</span></span></a>
+    <a class="marca" href="../#escolha" aria-label="Piccolo, início: roupas ou brinquedos" title="Início do Piccolo"><img src="img/logo.png" alt="Piccolo"></a><a class="marca playlink" href="#inicio" aria-label="Piccolo Play, início"><span class="play"><span>P</span><span>L</span><span>A</span><span>Y</span></span></a>
     <nav class="nav" aria-label="Seções">
       <a class="volta-piccolo" href="../">← Roupas</a><a href="#brinquedos">Brinquedos</a><a href="#colecoes">Coleções</a><a href="#historia">Nossa história</a><a href="#como">Como encomendar</a>
       <a class="btn zap" href="https://wa.me/5524992170426?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Piccolo%20Play." target="_blank" rel="noopener">WhatsApp</a>

@@ -1,68 +1,128 @@
 [
  {
-  "id": "exemplo_1",
-  "peca": "Moletom GAP",
+  "id": "frozen",
+  "peca": "Moletom Frozen",
   "marca": "GAP",
+  "tamanho": "18–24m",
+  "para": "Menina",
+  "preco": 189.9,
+  "foto": "img/brecho/frozen.webp"
+ },
+ {
+  "id": "gap-camiseta",
+  "peca": "Camiseta em malha",
+  "marca": "GAP",
+  "tamanho": "5",
+  "para": "Menino",
+  "preco": 48.5,
+  "foto": "img/brecho/gap-camiseta.webp"
+ },
+ {
+  "id": "tommy-cerejas",
+  "peca": "Vestido cerejas com barra em crochê",
+  "marca": "Tommy Hilfiger",
+  "tamanho": "2",
+  "para": "Menina",
+  "preco": 169.9,
+  "foto": "img/brecho/tommy-cerejas.webp"
+ },
+ {
+  "id": "hering-conjunto",
+  "peca": "Conjunto polo e bermuda",
+  "marca": "Hering",
   "tamanho": "4",
-  "para": "Menina",
-  "preco": 59,
-  "estado": "Seminovo",
-  "foto": "img/brecho/exemplo_1.webp",
-  "exemplo": true
- },
- {
-  "id": "exemplo_2",
-  "peca": "Body Carter's (3 un.)",
-  "marca": "Carter's",
-  "tamanho": "12M",
   "para": "Menino",
-  "preco": 49,
-  "estado": "Novo com etiqueta",
-  "foto": "img/brecho/exemplo_2.webp",
-  "exemplo": true
+  "preco": 122.9,
+  "foto": "img/brecho/hering-conjunto.webp"
  },
  {
-  "id": "exemplo_3",
-  "peca": "Vestido Zara Kids",
-  "marca": "Zara Kids",
-  "tamanho": "6",
+  "id": "gap-jardineira",
+  "peca": "Jardineira jeans",
+  "marca": "GAP",
+  "tamanho": "18–24m",
   "para": "Menina",
-  "preco": 45,
-  "estado": "Seminovo",
-  "foto": "img/brecho/exemplo_3.webp",
-  "exemplo": true
+  "preco": 119.9,
+  "foto": "img/brecho/gap-jardineira.webp"
  },
  {
-  "id": "exemplo_4",
-  "peca": "Jaqueta OshKosh",
-  "marca": "OshKosh",
-  "tamanho": "3",
-  "para": "Menino",
-  "preco": 79,
-  "estado": "Seminovo",
-  "foto": "img/brecho/exemplo_4.webp",
-  "exemplo": true
- },
- {
-  "id": "exemplo_5",
-  "peca": "Tênis Nike",
+  "id": "nike-sunray",
+  "peca": "Sandália Sunray Protect",
   "marca": "Nike",
-  "tamanho": "27",
-  "para": "Unissex",
-  "preco": 89,
-  "estado": "Seminovo",
-  "foto": "img/brecho/exemplo_5.webp",
-  "exemplo": true
+  "tamanho": "30",
+  "para": "Menino",
+  "preco": 139.9,
+  "foto": "img/brecho/nike-sunray.webp"
  },
  {
-  "id": "exemplo_6",
-  "peca": "Macacão Carter's",
+  "id": "zara-conjunto",
+  "peca": "Conjunto bata e short jeans",
+  "marca": "Zara",
+  "tamanho": "3",
+  "para": "Menina",
+  "preco": 127.9,
+  "foto": "img/brecho/zara-conjunto.webp"
+ },
+ {
+  "id": "disney-mickey",
+  "peca": "Conjunto Mickey blusa e short",
+  "marca": "Disney",
+  "tamanho": "5",
+  "para": "Menino",
+  "preco": 97.0,
+  "foto": "img/brecho/disney-mickey.webp"
+ },
+ {
+  "id": "oshkosh-rosa",
+  "peca": "Jardineira rosa com regulagem",
+  "marca": "OshKosh",
+  "tamanho": "2",
+  "para": "Menina",
+  "preco": 75.0,
+  "foto": "img/brecho/oshkosh-rosa.webp"
+ },
+ {
+  "id": "reserva-tenis",
+  "peca": "Tênis jeans",
+  "marca": "Reserva",
+  "tamanho": "25–26",
+  "para": "Menino",
+  "preco": 109.9,
+  "foto": "img/brecho/reserva-tenis.webp"
+ },
+ {
+  "id": "vans",
+  "peca": "Tênis Authentic vermelho",
+  "marca": "Vans",
+  "tamanho": "30",
+  "para": "Menina",
+  "preco": 169.9,
+  "foto": "img/brecho/vans.webp"
+ },
+ {
+  "id": "primark-marinho",
+  "peca": "Camiseta marinho",
+  "marca": "Primark",
+  "tamanho": "8–9",
+  "para": "Menino",
+  "preco": 48.0,
+  "foto": "img/brecho/primark-marinho.webp"
+ },
+ {
+  "id": "carters-uv",
+  "peca": "Camisa proteção UV unicórnio",
   "marca": "Carter's",
-  "tamanho": "RN",
-  "para": "Unissex",
-  "preco": 39,
-  "estado": "Novo com etiqueta",
-  "foto": "img/brecho/exemplo_6.webp",
-  "exemplo": true
+  "tamanho": "2",
+  "para": "Menina",
+  "preco": 55.0,
+  "foto": "img/brecho/carters-uv.webp"
+ },
+ {
+  "id": "pampili",
+  "peca": "Sapatilha couro rosa perolada",
+  "marca": "Pampili",
+  "tamanho": "21",
+  "para": "Menina",
+  "preco": 69.9,
+  "foto": "img/brecho/pampili.webp"
  }
 ]

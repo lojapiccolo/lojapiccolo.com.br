@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="Piccolo: brechó infantil e multimarcas em Petrópolis, RJ. Roupas novas e seminovas de marca, do RN aos 12 anos, com envio para todo o Brasil. Entre na Lista do Piccolo e veja as novidades antes de todo mundo.">
 <meta property="og:title" content="Piccolo · Brechó Infantil e Multimarcas">
-<meta property="og:description" content="Marca de verdade, preço de brechó. Entre na Lista do Piccolo e veja as peças do tamanho do seu filho antes de irem para o Instagram.">
+<meta property="og:description" content="Peças únicas de marca, do RN aos 12 anos. Entre na Lista do Piccolo e veja as peças do tamanho do seu filho antes de irem para o Instagram.">
 <meta property="og:image" content="https://lojapiccolo.com.br/play/img/logo.png">
 <meta property="og:url" content="https://lojapiccolo.com.br/">
 <meta name="theme-color" content="#FAF5EE">
@@ -51,7 +51,7 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.05;letter-spac
 .play i:nth-child(1){background:var(--t-salvia);transform:rotate(-4deg)}.play i:nth-child(2){background:var(--t-pessego);transform:rotate(3deg)}.play i:nth-child(3){background:var(--t-azul);transform:rotate(-2deg)}.play i:nth-child(4){background:var(--t-terra);transform:rotate(4deg)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;font-weight:800;font-size:15px;padding:12px 20px;border-radius:999px;background:var(--salvia);color:#fff;box-shadow:var(--sombra);transition:transform .15s,background .15s;border:0;cursor:pointer}
 .btn:hover{transform:translateY(-1px);background:var(--salvia-esc)}
-.btn.zap{background:var(--zap)}.btn.zap:hover{background:#3f9158}
+.btn.zap{background:var(--zap)}.nav a.btn,.nav a.btn:hover{color:#fff}.btn.zap:hover{background:#3f9158}
 .btn.suave{background:var(--branco);color:var(--ameixa);box-shadow:0 0 0 1.5px var(--linha) inset}
 .btn svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 @media (max-width:760px){.nav a:not(.btn):not(.play-link){display:none}.marca img{height:52px}.topo .wrap{min-height:78px}}
@@ -61,6 +61,48 @@ section+section{border-top:1px solid var(--linha)}
 .cab{display:grid;gap:10px;max-width:640px;margin-bottom:34px}
 .cab h2{font-size:clamp(30px,4.2vw,44px);color:var(--salvia-esc)}
 .cab p{color:var(--ameixa2);font-size:18px}
+
+.marca-play{text-decoration:none;margin-left:-6px;display:inline-flex}
+.marca-play .play{gap:4px}
+.marca-play .play i{width:34px;height:32px;font-size:20px;border-radius:9px 10px 8px 10px}
+@media (max-width:760px){.marca-play .play i{width:27px;height:25px;font-size:16px}.marca-play{margin-left:-10px}}
+html{scroll-padding-top:96px}
+
+/* escolha */
+.escolha{padding-block:30px 40px}
+.escolha .ola{font-family:var(--display);font-weight:700;font-size:clamp(24px,3vw,32px);color:var(--ameixa);margin-bottom:18px}
+.portas{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.porta{position:relative;overflow:hidden;border-radius:32px;min-height:300px;padding:30px;text-decoration:none;display:flex;flex-direction:column;align-items:flex-start;gap:8px;box-shadow:var(--sombra);transition:transform .2s}
+.porta:hover{transform:translateY(-3px)}
+.porta.roupas{background:var(--salvia-clara)}
+.porta.brinq{background:var(--pessego-claro)}
+.porta .eyebrow{position:relative;z-index:1}
+.porta h2{font-size:clamp(38px,5vw,58px);color:var(--salvia-esc);position:relative;z-index:1}
+.porta.brinq h2{color:var(--ameixa)}
+.porta p{max-width:23ch;color:var(--ameixa);font-size:17px;position:relative;z-index:1}
+.porta .btn{margin-top:auto;position:relative;z-index:1}
+.porta.brinq .btn{background:var(--t-terra)}
+.porta .fotos{position:absolute;right:20px;top:50%;transform:translateY(-50%);width:46%;height:86%}
+.porta .fotos span{position:absolute;width:58%;aspect-ratio:2/3;background:#fff;padding:6px;border-radius:12px;box-shadow:var(--sombra)}
+.porta .fotos span img{width:100%;height:100%;object-fit:cover;border-radius:8px}
+.porta .fotos span:nth-child(1){left:0;top:8%;transform:rotate(-7deg)}
+.porta .fotos span:nth-child(2){right:0;top:0;transform:rotate(5deg)}
+.porta .fotos span:nth-child(3){left:24%;bottom:-8%;transform:rotate(-1deg);width:52%}
+.porta .bq{position:absolute;filter:drop-shadow(0 10px 10px rgba(80,50,30,.22))}
+.porta .bq.a{right:4%;bottom:6%;width:30%}
+.porta .bq.b{right:30%;bottom:4%;width:24%}
+.porta .bq.c{right:6%;top:8%;width:18%}
+@media (max-width:760px){
+  .escolha{padding-block:20px 28px}
+  .portas{grid-template-columns:1fr;gap:12px}
+  .porta{min-height:200px;padding:22px;border-radius:26px}
+  .porta h2{font-size:38px}
+  .porta p{font-size:15px;max-width:18ch}
+  .porta .btn{padding:10px 16px;font-size:14px}
+  .porta .fotos{width:44%;right:12px}
+  .porta .eyebrow{max-width:55%;font-size:11.5px}
+  .porta .bq.b{display:none}.porta .bq.a{width:34%;right:5%;top:30%;bottom:auto}.porta .bq.c{width:15%;top:7%;right:9%}
+}
 
 /* herói */
 .heroi{padding-block:56px 48px;position:relative;overflow:hidden}
@@ -84,7 +126,7 @@ section+section{border-top:1px solid var(--linha)}
 /* vitrine */
 .grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
 .peca{background:var(--branco);border-radius:26px;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sombra);position:relative}
-.peca .ft{aspect-ratio:1;background:var(--creme2);overflow:hidden}
+.peca .ft{aspect-ratio:3/4;background:var(--creme2);overflow:hidden}
 .peca .ft img{width:100%;height:100%;object-fit:cover}
 .peca .tag{position:absolute;left:14px;top:14px;font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,253,249,.94);border-radius:999px;padding:5px 11px;color:var(--salvia-esc)}
 .peca .txt{padding:14px 18px 18px;display:grid;gap:3px}
@@ -97,6 +139,12 @@ section+section{border-top:1px solid var(--linha)}
 .vazio-vitrine{background:var(--branco);border-radius:26px;padding:34px;text-align:center;display:grid;gap:12px;justify-items:center;box-shadow:var(--sombra)}
 .vazio-vitrine p{color:var(--ameixa2);max-width:46ch}
 .aviso-proto{display:inline-block;font-size:12.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--t-terra);border-radius:999px;padding:5px 12px;margin-bottom:14px}
+
+.filtro{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+.filtro button{border-radius:999px;padding:8px 16px;font-weight:800;font-size:14.5px;background:var(--branco);box-shadow:0 0 0 1.5px var(--linha) inset;color:var(--ameixa2)}
+.filtro button[aria-pressed="true"]{background:var(--salvia);color:#fff;box-shadow:none}
+.peca[hidden]{display:none}
+@media (max-width:520px){.grade{grid-template-columns:1fr 1fr;gap:12px}.peca{border-radius:20px}.peca .txt{padding:10px 12px 14px}.peca h3{font-size:16px}.peca .meta{font-size:12.5px}.peca .linha{flex-direction:column;align-items:stretch;gap:8px}.preco{font-size:19px}.peca .tag{left:10px;top:10px;font-size:10.5px}}
 
 /* lista */
 .lista{background:var(--salvia-clara);border-top:0!important}
@@ -199,22 +247,45 @@ section+section{border-top:1px solid var(--linha)}
 <body>
 <header class="topo">
   <div class="wrap">
-    <a class="marca" href="/" aria-label="Piccolo, início"><img src="play/img/logo.png" alt="Piccolo"></a>
+    <a class="marca" href="#escolha" aria-label="Piccolo, início: roupas ou brinquedos" title="Início"><img src="play/img/logo.png" alt="Piccolo"></a><a class="marca-play" href="play/" aria-label="Piccolo Play, brinquedos" title="Piccolo Play, brinquedos"><span class="play"><i>P</i><i>L</i><i>A</i><i>Y</i></span></a>
     <nav class="nav" aria-label="Seções">
-      <a href="#novidades">Chegou esta semana</a><a href="#lista">Lista do Piccolo</a><a href="#como">Como funciona</a><a href="#desapego">Desapegar</a>
-      <a class="play-link" href="play/" aria-label="Piccolo Play, brinquedos"><span class="play"><i>P</i><i>L</i><i>A</i><i>Y</i></span></a>
+      <a href="#novidades">Vitrine</a><a href="#lista">Lista do Piccolo</a><a href="#como">Como funciona</a><a href="#desapego">Desapegar</a>
       <a class="btn zap" href="https://wa.me/5524992170426?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Piccolo." target="_blank" rel="noopener">WhatsApp</a>
     </nav>
   </div>
 </header>
 
 <main>
-<section class="heroi" id="inicio">
+<section class="escolha" id="escolha">
+  <div class="wrap">
+    <p class="ola">Oi! O que você procura hoje?</p>
+    <div class="portas">
+      <a class="porta roupas" href="#roupas">
+        <p class="eyebrow">Brechó infantil e multimarcas</p>
+        <h2>Roupas</h2>
+        <p>Novas e seminovas de marca, do RN aos 12 anos.</p>
+        <span class="btn">Ver roupas <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <div class="fotos" aria-hidden="true"><!--__PORTA__--></div>
+      </a>
+      <a class="porta brinq" href="play/">
+        <span class="play" style="gap:4px;position:relative;z-index:1"><i style="width:30px;height:28px;font-size:18px">P</i><i style="width:30px;height:28px;font-size:18px">L</i><i style="width:30px;height:28px;font-size:18px">A</i><i style="width:30px;height:28px;font-size:18px">Y</i></span>
+        <h2>Brinquedos</h2>
+        <p>Nossa linha de brinquedos feitos em 3D.</p>
+        <span class="btn">Conhecer o Piccolo Play <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <img class="bq c" src="play/img/cut_001.webp" alt="" aria-hidden="true">
+        <img class="bq b" src="play/img/cut_017.webp" alt="" aria-hidden="true">
+        <img class="bq a" src="play/img/cut_013.webp" alt="" aria-hidden="true">
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="heroi" id="roupas">
   <div class="wrap">
     <div>
       <p class="eyebrow">Brechó infantil e multimarcas · Petrópolis, RJ · envio para todo o Brasil</p>
-      <h1 style="margin-top:14px">Marca de verdade, preço de brechó.<em>Roupas novas e seminovas do RN aos 12 anos, escolhidas peça por peça.</em></h1>
-      <p class="lead">Cada peça do Piccolo é única: quando sai, não volta. Por isso quem está na nossa lista vê as novidades do tamanho do filho antes de todo mundo.</p>
+      <h1 style="margin-top:14px">Cada peça é única. Quem vê primeiro, leva.<em>Roupas novas e seminovas do RN aos 12 anos, escolhidas peça por peça.</em></h1>
+      <p class="lead">Quando uma peça sai, não volta. Por isso quem está na nossa lista vê as novidades do tamanho do filho antes de todo mundo.</p>
       <div class="acoes"><a class="btn" href="#lista">Entrar na Lista do Piccolo <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn suave" href="#novidades">Ver o que chegou</a></div>
       <div class="selos">
         <span class="selo"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Curadoria de marca</span>
@@ -230,7 +301,7 @@ section+section{border-top:1px solid var(--linha)}
 
 <section id="novidades">
   <div class="wrap">
-    <div class="cab"><p class="eyebrow">Chegou esta semana</p><h2>Uma amostra do que passou por aqui</h2><p>Peças únicas. Se a que você gostou já saiu, a gente te mostra o que tem agora no tamanho certo.</p></div>
+    <div class="cab"><p class="eyebrow">Chegou esta semana</p><h2>Uma amostra do que passa por aqui</h2><p>Peças únicas, uma de cada. Algumas destas podem já ter encontrado dono: quem está na Lista do Piccolo vê as novidades antes.</p></div>
     <!--__VITRINE__-->
   </div>
 </section>
@@ -346,7 +417,7 @@ section+section{border-top:1px solid var(--linha)}
     <a class="play-card" href="play/">
       <span class="play" style="gap:5px"><i style="width:36px;height:34px;font-size:22px">P</i><i style="width:36px;height:34px;font-size:22px">L</i><i style="width:36px;height:34px;font-size:22px">A</i><i style="width:36px;height:34px;font-size:22px">Y</i></span>
       <h3>Piccolo Play: brinquedos para brincar de verdade</h3>
-      <p>Impressos em 3D, sob encomenda, na cor que a criança escolher. Conheça a linha →</p>
+      <p>Nossa linha de brinquedos feitos em 3D, na cor que a criança escolher. Conheça a linha →</p>
       <img src="play/img/cut_015.webp" alt="">
     </a>
   </div>

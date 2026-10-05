@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="Piccolo: brechó infantil e multimarcas em Petrópolis, RJ. Roupas novas e seminovas de marca, do RN aos 12 anos, com envio para todo o Brasil. Entre na Lista do Piccolo e veja as novidades antes de todo mundo.">
 <meta property="og:title" content="Piccolo · Brechó Infantil e Multimarcas">
-<meta property="og:description" content="Marca de verdade, preço de brechó. Entre na Lista do Piccolo e veja as peças do tamanho do seu filho antes de irem para o Instagram.">
+<meta property="og:description" content="Peças únicas de marca, do RN aos 12 anos. Entre na Lista do Piccolo e veja as peças do tamanho do seu filho antes de irem para o Instagram.">
 <meta property="og:image" content="https://lojapiccolo.com.br/play/img/logo.png">
 <meta property="og:url" content="https://lojapiccolo.com.br/">
 <meta name="theme-color" content="#FAF5EE">
@@ -51,7 +51,7 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.05;letter-spac
 .play i:nth-child(1){background:var(--t-salvia);transform:rotate(-4deg)}.play i:nth-child(2){background:var(--t-pessego);transform:rotate(3deg)}.play i:nth-child(3){background:var(--t-azul);transform:rotate(-2deg)}.play i:nth-child(4){background:var(--t-terra);transform:rotate(4deg)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;font-weight:800;font-size:15px;padding:12px 20px;border-radius:999px;background:var(--salvia);color:#fff;box-shadow:var(--sombra);transition:transform .15s,background .15s;border:0;cursor:pointer}
 .btn:hover{transform:translateY(-1px);background:var(--salvia-esc)}
-.btn.zap{background:var(--zap)}.btn.zap:hover{background:#3f9158}
+.btn.zap{background:var(--zap)}.nav a.btn,.nav a.btn:hover{color:#fff}.btn.zap:hover{background:#3f9158}
 .btn.suave{background:var(--branco);color:var(--ameixa);box-shadow:0 0 0 1.5px var(--linha) inset}
 .btn svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 @media (max-width:760px){.nav a:not(.btn):not(.play-link){display:none}.marca img{height:52px}.topo .wrap{min-height:78px}}
@@ -61,6 +61,48 @@ section+section{border-top:1px solid var(--linha)}
 .cab{display:grid;gap:10px;max-width:640px;margin-bottom:34px}
 .cab h2{font-size:clamp(30px,4.2vw,44px);color:var(--salvia-esc)}
 .cab p{color:var(--ameixa2);font-size:18px}
+
+.marca-play{text-decoration:none;margin-left:-6px;display:inline-flex}
+.marca-play .play{gap:4px}
+.marca-play .play i{width:34px;height:32px;font-size:20px;border-radius:9px 10px 8px 10px}
+@media (max-width:760px){.marca-play .play i{width:27px;height:25px;font-size:16px}.marca-play{margin-left:-10px}}
+html{scroll-padding-top:96px}
+
+/* escolha */
+.escolha{padding-block:30px 40px}
+.escolha .ola{font-family:var(--display);font-weight:700;font-size:clamp(24px,3vw,32px);color:var(--ameixa);margin-bottom:18px}
+.portas{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.porta{position:relative;overflow:hidden;border-radius:32px;min-height:300px;padding:30px;text-decoration:none;display:flex;flex-direction:column;align-items:flex-start;gap:8px;box-shadow:var(--sombra);transition:transform .2s}
+.porta:hover{transform:translateY(-3px)}
+.porta.roupas{background:var(--salvia-clara)}
+.porta.brinq{background:var(--pessego-claro)}
+.porta .eyebrow{position:relative;z-index:1}
+.porta h2{font-size:clamp(38px,5vw,58px);color:var(--salvia-esc);position:relative;z-index:1}
+.porta.brinq h2{color:var(--ameixa)}
+.porta p{max-width:23ch;color:var(--ameixa);font-size:17px;position:relative;z-index:1}
+.porta .btn{margin-top:auto;position:relative;z-index:1}
+.porta.brinq .btn{background:var(--t-terra)}
+.porta .fotos{position:absolute;right:20px;top:50%;transform:translateY(-50%);width:46%;height:86%}
+.porta .fotos span{position:absolute;width:58%;aspect-ratio:2/3;background:#fff;padding:6px;border-radius:12px;box-shadow:var(--sombra)}
+.porta .fotos span img{width:100%;height:100%;object-fit:cover;border-radius:8px}
+.porta .fotos span:nth-child(1){left:0;top:8%;transform:rotate(-7deg)}
+.porta .fotos span:nth-child(2){right:0;top:0;transform:rotate(5deg)}
+.porta .fotos span:nth-child(3){left:24%;bottom:-8%;transform:rotate(-1deg);width:52%}
+.porta .bq{position:absolute;filter:drop-shadow(0 10px 10px rgba(80,50,30,.22))}
+.porta .bq.a{right:4%;bottom:6%;width:30%}
+.porta .bq.b{right:30%;bottom:4%;width:24%}
+.porta .bq.c{right:6%;top:8%;width:18%}
+@media (max-width:760px){
+  .escolha{padding-block:20px 28px}
+  .portas{grid-template-columns:1fr;gap:12px}
+  .porta{min-height:200px;padding:22px;border-radius:26px}
+  .porta h2{font-size:38px}
+  .porta p{font-size:15px;max-width:18ch}
+  .porta .btn{padding:10px 16px;font-size:14px}
+  .porta .fotos{width:44%;right:12px}
+  .porta .eyebrow{max-width:55%;font-size:11.5px}
+  .porta .bq.b{display:none}.porta .bq.a{width:34%;right:5%;top:30%;bottom:auto}.porta .bq.c{width:15%;top:7%;right:9%}
+}
 
 /* herói */
 .heroi{padding-block:56px 48px;position:relative;overflow:hidden}
@@ -84,7 +126,7 @@ section+section{border-top:1px solid var(--linha)}
 /* vitrine */
 .grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
 .peca{background:var(--branco);border-radius:26px;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sombra);position:relative}
-.peca .ft{aspect-ratio:1;background:var(--creme2);overflow:hidden}
+.peca .ft{aspect-ratio:3/4;background:var(--creme2);overflow:hidden}
 .peca .ft img{width:100%;height:100%;object-fit:cover}
 .peca .tag{position:absolute;left:14px;top:14px;font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,253,249,.94);border-radius:999px;padding:5px 11px;color:var(--salvia-esc)}
 .peca .txt{padding:14px 18px 18px;display:grid;gap:3px}
@@ -97,6 +139,12 @@ section+section{border-top:1px solid var(--linha)}
 .vazio-vitrine{background:var(--branco);border-radius:26px;padding:34px;text-align:center;display:grid;gap:12px;justify-items:center;box-shadow:var(--sombra)}
 .vazio-vitrine p{color:var(--ameixa2);max-width:46ch}
 .aviso-proto{display:inline-block;font-size:12.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--t-terra);border-radius:999px;padding:5px 12px;margin-bottom:14px}
+
+.filtro{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+.filtro button{border-radius:999px;padding:8px 16px;font-weight:800;font-size:14.5px;background:var(--branco);box-shadow:0 0 0 1.5px var(--linha) inset;color:var(--ameixa2)}
+.filtro button[aria-pressed="true"]{background:var(--salvia);color:#fff;box-shadow:none}
+.peca[hidden]{display:none}
+@media (max-width:520px){.grade{grid-template-columns:1fr 1fr;gap:12px}.peca{border-radius:20px}.peca .txt{padding:10px 12px 14px}.peca h3{font-size:16px}.peca .meta{font-size:12.5px}.peca .linha{flex-direction:column;align-items:stretch;gap:8px}.preco{font-size:19px}.peca .tag{left:10px;top:10px;font-size:10.5px}}
 
 /* lista */
 .lista{background:var(--salvia-clara);border-top:0!important}
@@ -199,22 +247,45 @@ section+section{border-top:1px solid var(--linha)}
 <body>
 <header class="topo">
   <div class="wrap">
-    <a class="marca" href="/" aria-label="Piccolo, início"><img src="play/img/logo.png" alt="Piccolo"></a>
+    <a class="marca" href="#escolha" aria-label="Piccolo, início: roupas ou brinquedos" title="Início"><img src="play/img/logo.png" alt="Piccolo"></a><a class="marca-play" href="play/" aria-label="Piccolo Play, brinquedos" title="Piccolo Play, brinquedos"><span class="play"><i>P</i><i>L</i><i>A</i><i>Y</i></span></a>
     <nav class="nav" aria-label="Seções">
-      <a href="#novidades">Chegou esta semana</a><a href="#lista">Lista do Piccolo</a><a href="#como">Como funciona</a><a href="#desapego">Desapegar</a>
-      <a class="play-link" href="play/" aria-label="Piccolo Play, brinquedos"><span class="play"><i>P</i><i>L</i><i>A</i><i>Y</i></span></a>
+      <a href="#novidades">Vitrine</a><a href="#lista">Lista do Piccolo</a><a href="#como">Como funciona</a><a href="#desapego">Desapegar</a>
       <a class="btn zap" href="https://wa.me/5524992170426?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Piccolo." target="_blank" rel="noopener">WhatsApp</a>
     </nav>
   </div>
 </header>
 
 <main>
-<section class="heroi" id="inicio">
+<section class="escolha" id="escolha">
+  <div class="wrap">
+    <p class="ola">Oi! O que você procura hoje?</p>
+    <div class="portas">
+      <a class="porta roupas" href="#roupas">
+        <p class="eyebrow">Brechó infantil e multimarcas</p>
+        <h2>Roupas</h2>
+        <p>Novas e seminovas de marca, do RN aos 12 anos.</p>
+        <span class="btn">Ver roupas <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <div class="fotos" aria-hidden="true"><span><img src="img/brecho/frozen.webp" alt=""></span><span><img src="img/brecho/tommy-cerejas.webp" alt=""></span><span><img src="img/brecho/gap-camiseta.webp" alt=""></span></div>
+      </a>
+      <a class="porta brinq" href="play/">
+        <span class="play" style="gap:4px;position:relative;z-index:1"><i style="width:30px;height:28px;font-size:18px">P</i><i style="width:30px;height:28px;font-size:18px">L</i><i style="width:30px;height:28px;font-size:18px">A</i><i style="width:30px;height:28px;font-size:18px">Y</i></span>
+        <h2>Brinquedos</h2>
+        <p>Nossa linha de brinquedos feitos em 3D.</p>
+        <span class="btn">Conhecer o Piccolo Play <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <img class="bq c" src="play/img/cut_001.webp" alt="" aria-hidden="true">
+        <img class="bq b" src="play/img/cut_017.webp" alt="" aria-hidden="true">
+        <img class="bq a" src="play/img/cut_013.webp" alt="" aria-hidden="true">
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="heroi" id="roupas">
   <div class="wrap">
     <div>
       <p class="eyebrow">Brechó infantil e multimarcas · Petrópolis, RJ · envio para todo o Brasil</p>
-      <h1 style="margin-top:14px">Marca de verdade, preço de brechó.<em>Roupas novas e seminovas do RN aos 12 anos, escolhidas peça por peça.</em></h1>
-      <p class="lead">Cada peça do Piccolo é única: quando sai, não volta. Por isso quem está na nossa lista vê as novidades do tamanho do filho antes de todo mundo.</p>
+      <h1 style="margin-top:14px">Cada peça é única. Quem vê primeiro, leva.<em>Roupas novas e seminovas do RN aos 12 anos, escolhidas peça por peça.</em></h1>
+      <p class="lead">Quando uma peça sai, não volta. Por isso quem está na nossa lista vê as novidades do tamanho do filho antes de todo mundo.</p>
       <div class="acoes"><a class="btn" href="#lista">Entrar na Lista do Piccolo <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn suave" href="#novidades">Ver o que chegou</a></div>
       <div class="selos">
         <span class="selo"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Curadoria de marca</span>
@@ -223,27 +294,43 @@ section+section{border-top:1px solid var(--linha)}
       </div>
     </div>
     <div class="mosaico" aria-hidden="true">
-      <div class="pol"><div class="ft"><img src="img/brecho/exemplo_1.webp" alt=""></div><small>GAP · tam. 4</small></div><div class="pol"><div class="ft"><img src="img/brecho/exemplo_2.webp" alt=""></div><small>Carter&#x27;s · tam. 12M</small></div><div class="pol"><div class="ft"><img src="img/brecho/exemplo_3.webp" alt=""></div><small>Zara Kids · tam. 6</small></div><div class="pol"><div class="ft"><img src="img/brecho/exemplo_4.webp" alt=""></div><small>OshKosh · tam. 3</small></div>
+      <div class="pol"><div class="ft"><img src="img/brecho/hering-conjunto.webp" alt=""></div><small>Hering · tam. 4</small></div><div class="pol"><div class="ft"><img src="img/brecho/gap-jardineira.webp" alt=""></div><small>GAP · tam. 18–24m</small></div><div class="pol"><div class="ft"><img src="img/brecho/nike-sunray.webp" alt=""></div><small>Nike · tam. 30</small></div><div class="pol"><div class="ft"><img src="img/brecho/zara-conjunto.webp" alt=""></div><small>Zara · tam. 3</small></div>
     </div>
   </div>
 </section>
 
 <section id="novidades">
   <div class="wrap">
-    <div class="cab"><p class="eyebrow">Chegou esta semana</p><h2>Uma amostra do que passou por aqui</h2><p>Peças únicas. Se a que você gostou já saiu, a gente te mostra o que tem agora no tamanho certo.</p></div>
-    <span class="aviso-proto">Fotos de exemplo · as peças reais entram pela base "Vitrine do brechó" no Notion</span><div class="grade"><article class="peca"><div class="ft"><img src="img/brecho/exemplo_1.webp" alt="Moletom GAP" loading="lazy"></div><span class="tag">Seminovo</span>
-<div class="txt"><h3>Moletom GAP</h3><div class="meta">GAP · tam. 4 · Menina</div>
-<div class="linha"><span class="preco">R$ 59<sup>,00</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20Moletom%20GAP%20%28GAP%2C%20tam.%204%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article><article class="peca"><div class="ft"><img src="img/brecho/exemplo_2.webp" alt="Body Carter&#x27;s (3 un.)" loading="lazy"></div><span class="tag">Novo com etiqueta</span>
-<div class="txt"><h3>Body Carter&#x27;s (3 un.)</h3><div class="meta">Carter&#x27;s · tam. 12M · Menino</div>
-<div class="linha"><span class="preco">R$ 49<sup>,00</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20Body%20Carter%27s%20%283%20un.%29%20%28Carter%27s%2C%20tam.%2012M%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article><article class="peca"><div class="ft"><img src="img/brecho/exemplo_3.webp" alt="Vestido Zara Kids" loading="lazy"></div><span class="tag">Seminovo</span>
-<div class="txt"><h3>Vestido Zara Kids</h3><div class="meta">Zara Kids · tam. 6 · Menina</div>
-<div class="linha"><span class="preco">R$ 45<sup>,00</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20Vestido%20Zara%20Kids%20%28Zara%20Kids%2C%20tam.%206%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article><article class="peca"><div class="ft"><img src="img/brecho/exemplo_4.webp" alt="Jaqueta OshKosh" loading="lazy"></div><span class="tag">Seminovo</span>
-<div class="txt"><h3>Jaqueta OshKosh</h3><div class="meta">OshKosh · tam. 3 · Menino</div>
-<div class="linha"><span class="preco">R$ 79<sup>,00</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20Jaqueta%20OshKosh%20%28OshKosh%2C%20tam.%203%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article><article class="peca"><div class="ft"><img src="img/brecho/exemplo_5.webp" alt="Tênis Nike" loading="lazy"></div><span class="tag">Seminovo</span>
-<div class="txt"><h3>Tênis Nike</h3><div class="meta">Nike · tam. 27 · Unissex</div>
-<div class="linha"><span class="preco">R$ 89<sup>,00</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20T%C3%AAnis%20Nike%20%28Nike%2C%20tam.%2027%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article><article class="peca"><div class="ft"><img src="img/brecho/exemplo_6.webp" alt="Macacão Carter&#x27;s" loading="lazy"></div><span class="tag">Novo com etiqueta</span>
-<div class="txt"><h3>Macacão Carter&#x27;s</h3><div class="meta">Carter&#x27;s · tam. RN · Unissex</div>
-<div class="linha"><span class="preco">R$ 39<sup>,00</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20Macac%C3%A3o%20Carter%27s%20%28Carter%27s%2C%20tam.%20RN%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article></div><p style="margin-top:22px;color:var(--ameixa2);font-size:15px">Não achou o tamanho? <a href="#lista" style="font-weight:800;color:var(--salvia-esc)">Entre na lista</a> e a gente te mostra o que tem.</p>
+    <div class="cab"><p class="eyebrow">Chegou esta semana</p><h2>Uma amostra do que passa por aqui</h2><p>Peças únicas, uma de cada. Algumas destas podem já ter encontrado dono: quem está na Lista do Piccolo vê as novidades antes.</p></div>
+    <div class="filtro" role="group" aria-label="Filtrar vitrine"><button type="button" data-f="" aria-pressed="true">Todas</button><button type="button" data-f="Menina" aria-pressed="false">Meninas</button><button type="button" data-f="Menino" aria-pressed="false">Meninos</button></div><div class="grade"><article class="peca" data-para="Menina"><div class="ft"><img src="img/brecho/frozen.webp" alt="Moletom Frozen, GAP" loading="lazy"></div><span class="tag">Peça única</span>
+<div class="txt"><h3>Moletom Frozen</h3><div class="meta">GAP · tam. 18–24m · Menina</div>
+<div class="linha"><span class="preco">R$ 189<sup>,90</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20Moletom%20Frozen%20%28GAP%2C%20tam.%2018%E2%80%9324m%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article><article class="peca" data-para="Menino"><div class="ft"><img src="img/brecho/gap-camiseta.webp" alt="Camiseta em malha, GAP" loading="lazy"></div><span class="tag">Peça única</span>
+<div class="txt"><h3>Camiseta em malha</h3><div class="meta">GAP · tam. 5 · Menino</div>
+<div class="linha"><span class="preco">R$ 48<sup>,50</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20Camiseta%20em%20malha%20%28GAP%2C%20tam.%205%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article><article class="peca" data-para="Menina"><div class="ft"><img src="img/brecho/tommy-cerejas.webp" alt="Vestido cerejas com barra em crochê, Tommy Hilfiger" loading="lazy"></div><span class="tag">Peça única</span>
+<div class="txt"><h3>Vestido cerejas com barra em crochê</h3><div class="meta">Tommy Hilfiger · tam. 2 · Menina</div>
+<div class="linha"><span class="preco">R$ 169<sup>,90</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20Vestido%20cerejas%20com%20barra%20em%20croch%C3%AA%20%28Tommy%20Hilfiger%2C%20tam.%202%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article><article class="peca" data-para="Menino"><div class="ft"><img src="img/brecho/hering-conjunto.webp" alt="Conjunto polo e bermuda, Hering" loading="lazy"></div><span class="tag">Peça única</span>
+<div class="txt"><h3>Conjunto polo e bermuda</h3><div class="meta">Hering · tam. 4 · Menino</div>
+<div class="linha"><span class="preco">R$ 122<sup>,90</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20Conjunto%20polo%20e%20bermuda%20%28Hering%2C%20tam.%204%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article><article class="peca" data-para="Menina"><div class="ft"><img src="img/brecho/gap-jardineira.webp" alt="Jardineira jeans, GAP" loading="lazy"></div><span class="tag">Peça única</span>
+<div class="txt"><h3>Jardineira jeans</h3><div class="meta">GAP · tam. 18–24m · Menina</div>
+<div class="linha"><span class="preco">R$ 119<sup>,90</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20Jardineira%20jeans%20%28GAP%2C%20tam.%2018%E2%80%9324m%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article><article class="peca" data-para="Menino"><div class="ft"><img src="img/brecho/nike-sunray.webp" alt="Sandália Sunray Protect, Nike" loading="lazy"></div><span class="tag">Peça única</span>
+<div class="txt"><h3>Sandália Sunray Protect</h3><div class="meta">Nike · tam. 30 · Menino</div>
+<div class="linha"><span class="preco">R$ 139<sup>,90</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20Sand%C3%A1lia%20Sunray%20Protect%20%28Nike%2C%20tam.%2030%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article><article class="peca" data-para="Menina"><div class="ft"><img src="img/brecho/zara-conjunto.webp" alt="Conjunto bata e short jeans, Zara" loading="lazy"></div><span class="tag">Peça única</span>
+<div class="txt"><h3>Conjunto bata e short jeans</h3><div class="meta">Zara · tam. 3 · Menina</div>
+<div class="linha"><span class="preco">R$ 127<sup>,90</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20Conjunto%20bata%20e%20short%20jeans%20%28Zara%2C%20tam.%203%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article><article class="peca" data-para="Menino"><div class="ft"><img src="img/brecho/disney-mickey.webp" alt="Conjunto Mickey blusa e short, Disney" loading="lazy"></div><span class="tag">Peça única</span>
+<div class="txt"><h3>Conjunto Mickey blusa e short</h3><div class="meta">Disney · tam. 5 · Menino</div>
+<div class="linha"><span class="preco">R$ 97<sup>,00</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20Conjunto%20Mickey%20blusa%20e%20short%20%28Disney%2C%20tam.%205%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article><article class="peca" data-para="Menina"><div class="ft"><img src="img/brecho/oshkosh-rosa.webp" alt="Jardineira rosa com regulagem, OshKosh" loading="lazy"></div><span class="tag">Peça única</span>
+<div class="txt"><h3>Jardineira rosa com regulagem</h3><div class="meta">OshKosh · tam. 2 · Menina</div>
+<div class="linha"><span class="preco">R$ 75<sup>,00</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20Jardineira%20rosa%20com%20regulagem%20%28OshKosh%2C%20tam.%202%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article><article class="peca" data-para="Menino"><div class="ft"><img src="img/brecho/reserva-tenis.webp" alt="Tênis jeans, Reserva" loading="lazy"></div><span class="tag">Peça única</span>
+<div class="txt"><h3>Tênis jeans</h3><div class="meta">Reserva · tam. 25–26 · Menino</div>
+<div class="linha"><span class="preco">R$ 109<sup>,90</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20T%C3%AAnis%20jeans%20%28Reserva%2C%20tam.%2025%E2%80%9326%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article><article class="peca" data-para="Menina"><div class="ft"><img src="img/brecho/vans.webp" alt="Tênis Authentic vermelho, Vans" loading="lazy"></div><span class="tag">Peça única</span>
+<div class="txt"><h3>Tênis Authentic vermelho</h3><div class="meta">Vans · tam. 30 · Menina</div>
+<div class="linha"><span class="preco">R$ 169<sup>,90</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20T%C3%AAnis%20Authentic%20vermelho%20%28Vans%2C%20tam.%2030%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article><article class="peca" data-para="Menino"><div class="ft"><img src="img/brecho/primark-marinho.webp" alt="Camiseta marinho, Primark" loading="lazy"></div><span class="tag">Peça única</span>
+<div class="txt"><h3>Camiseta marinho</h3><div class="meta">Primark · tam. 8–9 · Menino</div>
+<div class="linha"><span class="preco">R$ 48<sup>,00</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20Camiseta%20marinho%20%28Primark%2C%20tam.%208%E2%80%939%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article><article class="peca" data-para="Menina"><div class="ft"><img src="img/brecho/carters-uv.webp" alt="Camisa proteção UV unicórnio, Carter&#x27;s" loading="lazy"></div><span class="tag">Peça única</span>
+<div class="txt"><h3>Camisa proteção UV unicórnio</h3><div class="meta">Carter&#x27;s · tam. 2 · Menina</div>
+<div class="linha"><span class="preco">R$ 55<sup>,00</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20Camisa%20prote%C3%A7%C3%A3o%20UV%20unic%C3%B3rnio%20%28Carter%27s%2C%20tam.%202%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article><article class="peca" data-para="Menina"><div class="ft"><img src="img/brecho/pampili.webp" alt="Sapatilha couro rosa perolada, Pampili" loading="lazy"></div><span class="tag">Peça única</span>
+<div class="txt"><h3>Sapatilha couro rosa perolada</h3><div class="meta">Pampili · tam. 21 · Menina</div>
+<div class="linha"><span class="preco">R$ 69<sup>,90</sup></span><a class="btn zap" href="https://wa.me/5524992170426?text=Oi%21%20Vi%20no%20site%20a%20pe%C3%A7a%20Sapatilha%20couro%20rosa%20perolada%20%28Pampili%2C%20tam.%2021%29%20e%20tenho%20interesse.%20Ainda%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noopener">Quero esta</a></div></div></article></div><script>document.querySelectorAll(".filtro button").forEach(b=>b.onclick=()=>{const f=b.dataset.f;document.querySelectorAll(".filtro button").forEach(x=>x.setAttribute("aria-pressed",x===b));document.querySelectorAll(".grade .peca").forEach(c=>c.hidden=!!f&&c.dataset.para!==f&&c.dataset.para!=="Unissex")})</script><p style="margin-top:22px;color:var(--ameixa2);font-size:15px">Não achou o tamanho? <a href="#lista" style="font-weight:800;color:var(--salvia-esc)">Entre na lista</a> e a gente te mostra o que tem.</p>
   </div>
 </section>
 
@@ -321,7 +408,7 @@ section+section{border-top:1px solid var(--linha)}
 <section id="depoimentos">
   <div class="wrap">
     <div class="cab"><p class="eyebrow">Quem já comprou</p><h2>Mães do Brasil inteiro, uma peça de cada vez</h2></div>
-    <span class="aviso-proto">Aguardando os depoimentos reais (destaque "feedbacks" do Instagram)</span><div class="depo placeholder"><figure><span class="aspas">“</span><blockquote>Depoimento de uma cliente, transcrito do Instagram.</blockquote><figcaption>Nome · cidade</figcaption></figure><figure><span class="aspas">“</span><blockquote>Depoimento de uma cliente, transcrito do Instagram.</blockquote><figcaption>Nome · cidade</figcaption></figure><figure><span class="aspas">“</span><blockquote>Depoimento de uma cliente, transcrito do Instagram.</blockquote><figcaption>Nome · cidade</figcaption></figure></div>
+    <div class="depo"><figure><span class="aspas">“</span><blockquote>Estou encantada com o cuidado, o cheirinho e a qualidade das peças! Com certeza minha Laurinha vai ficar um charme. Parabéns pelo capricho e pelo atendimento.</blockquote><figcaption>Rafaela C. · Petrópolis</figcaption></figure><figure><span class="aspas">“</span><blockquote>Eu ameeei minhas coisas! Chegaram embaladas com muito carinho, com um cheirinho delicioso e ainda teve bilhetinho escrito à mão. Tô apaixonada pelo serviço de vocês!</blockquote><figcaption>Juliana M. · Rio de Janeiro</figcaption></figure><figure><span class="aspas">“</span><blockquote>Recebi as roupinhas muito mais rápido do que eu imaginava! E impecáveis, tudo lindo. Quando eu vestir a Catharina mando uma fotinho pra vocês.</blockquote><figcaption>Carolina R. · Niterói</figcaption></figure><figure><span class="aspas">“</span><blockquote>Não nos conhecemos pessoalmente, mas você transmite uma sensação incrível de paz, educação e gentileza. Mesmo sendo tudo on-line, dá pra sentir o cuidado de vocês em cada detalhe.</blockquote><figcaption>Fernanda L. · Belo Horizonte</figcaption></figure><figure><span class="aspas">“</span><blockquote>Além do atendimento, da variedade, dos preços… tudo! Igual a vocês não tem. Não largo vocês nunca mais!</blockquote><figcaption>Camila A. · Petrópolis</figcaption></figure><figure><span class="aspas">“</span><blockquote>Vocês são incríveis. A curadoria é maravilhosa. Ela ama as roupinhas.</blockquote><figcaption>Patrícia S. · Teresópolis</figcaption></figure><figure><span class="aspas">“</span><blockquote>Preciso enaltecer esse brechó e todo esse carinho, cuidado e amor. Só tem coisa linda e de bom gosto! Mamães de plantão, vão lá dar uma olhadinha.</blockquote><figcaption>Isadora G. · Petrópolis</figcaption></figure><figure><span class="aspas">“</span><blockquote>As peças são lindas, cheirosas… perfeito! Que lindeza pra minha neta.</blockquote><figcaption>Lúcia B., avó · Juiz de Fora</figcaption></figure></div>
   </div>
 </section>
 
@@ -358,7 +445,7 @@ section+section{border-top:1px solid var(--linha)}
     <a class="play-card" href="play/">
       <span class="play" style="gap:5px"><i style="width:36px;height:34px;font-size:22px">P</i><i style="width:36px;height:34px;font-size:22px">L</i><i style="width:36px;height:34px;font-size:22px">A</i><i style="width:36px;height:34px;font-size:22px">Y</i></span>
       <h3>Piccolo Play: brinquedos para brincar de verdade</h3>
-      <p>Impressos em 3D, sob encomenda, na cor que a criança escolher. Conheça a linha →</p>
+      <p>Nossa linha de brinquedos feitos em 3D, na cor que a criança escolher. Conheça a linha →</p>
       <img src="play/img/cut_015.webp" alt="">
     </a>
   </div>
