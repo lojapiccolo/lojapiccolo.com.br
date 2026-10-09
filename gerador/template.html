@@ -248,14 +248,16 @@ const FAM=[
  {id:'agua-movimento',n:'Água & Movimento',s:'Para a hora do banho e para ver a força do ar',cls:'c5',f:'f5',img:'009'},
 ];
 const famDe=n=>FAM.find(f=>f.n===n);
-const IDADES=['1 a 3 anos','2 a 4 anos','3 a 6 anos','6+ anos, com adulto'];
+const IDADES=[[9,'9 meses'],[12,'1 ano'],[18,'18 meses'],[24,'2 anos'],[36,'3 anos ou mais']];
+const idadeCurta=t=>(t||'').replace(/^A partir de\s*/i,'').replace(/,\s*com adulto/i,'')+'+';
+const meses=t=>{const m=/(\d+)\s*(mes|ano)/i.exec(t||'');return m?(+m[1])*(/ano/i.test(m[2])?12:1):0};
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const precoHtml=p=>{const [i,c]=p.split(',');return `<span class="preco">R$ ${i}<sup>,${c}</sup></span>`};
 const idadeHtml=i=>`<span class="idade"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="7" r="3.2"/><path d="M5.5 20c.6-4 3.2-6.2 6.5-6.2s5.9 2.2 6.5 6.2"/></svg>${esc(i)}</span>`;
 const icone=t=>{const m=MAPA.find(([k])=>t.toLowerCase().includes(k.toLowerCase()));return IC[m?m[1]:'folha']};
 const zapLink=(p,cor)=>{const t=cor?`Olá! Quero o ${p.nome} ${p.nome2} na cor ${cor} (PIC-PLAY-${p.sku}) da Piccolo Play.`:`Olá! Tenho interesse no ${p.nome} ${p.nome2} (PIC-PLAY-${p.sku}) da Piccolo Play.`;return `https://wa.me/${ZAP}?text=${encodeURIComponent(t)}`};
 
-function cardHtml(p){const f=famDe(p.familia);return `<a class="card ${f.f}" href="#p-${p.sku}"><div class="foto"><img src="img/cut_${p.sku}.webp" alt="${esc(p.nome+' '+p.nome2)}" loading="lazy"></div><div class="txt"><h3>${esc(p.nome)}<small>${esc(p.nome2)}</small></h3><div class="linha">${precoHtml(p.preco)}${idadeHtml(p.idade)}</div></div></a>`}
+function cardHtml(p){const f=famDe(p.familia);return `<a class="card ${f.f}" href="#p-${p.sku}"><div class="foto"><img src="img/cut_${p.sku}.webp" alt="${esc(p.nome+' '+p.nome2)}" loading="lazy"></div><div class="txt"><h3>${esc(p.nome)}<small>${esc(p.nome2)}</small></h3><div class="linha">${precoHtml(p.preco)}${idadeHtml(idadeCurta(p.idade))}</div></div></a>`}
 
 const HIST=`<p>A infância é feita de pequenas descobertas.</p>
 <p>Uma peça que se encaixa. Uma torre que fica em pé depois de algumas tentativas. Um bichinho que ganha nome, uma receita imaginária, um passeio que transforma o chão da sala em um mundo inteiro.</p>
@@ -331,13 +333,13 @@ function home(){
 function filtros(){
   const el=document.getElementById('filtros');
   el.innerHTML=`<span class="rot">Coleção</span>`+[{id:null,n:'Todas'},...FAM].map(f=>`<button class="chip" data-fam="${f.id??''}" aria-pressed="${filtro.fam===f.id}">${f.n}</button>`).join('')
-   +`<span class="rot" style="margin-left:12px">Idade</span>`+[null,...IDADES].map(i=>`<button class="chip" data-idade="${i??''}" aria-pressed="${filtro.idade===i}">${i??'Todas'}</button>`).join('');
+   +`<span class="rot" style="margin-left:12px">Idade da criança</span>`+[[null,'Todas'],...IDADES].map(([v,r])=>`<button class="chip" data-idade="${v??''}" aria-pressed="${filtro.idade===v}">${r}</button>`).join('');
   el.querySelectorAll('[data-fam]').forEach(b=>b.onclick=()=>{filtro.fam=b.dataset.fam||null;filtros();grade()});
-  el.querySelectorAll('[data-idade]').forEach(b=>b.onclick=()=>{filtro.idade=b.dataset.idade||null;filtros();grade()});
+  el.querySelectorAll('[data-idade]').forEach(b=>b.onclick=()=>{filtro.idade=b.dataset.idade?+b.dataset.idade:null;filtros();grade()});
 }
 function grade(){
   const g=document.getElementById('grade');
-  const ps=PRODUTOS.filter(p=>(!filtro.fam||famDe(p.familia).id===filtro.fam)&&(!filtro.idade||p.idade===filtro.idade));
+  const ps=PRODUTOS.filter(p=>(!filtro.fam||famDe(p.familia).id===filtro.fam)&&(!filtro.idade||meses(p.idade)<=filtro.idade));
   g.innerHTML=ps.length?ps.map(cardHtml).join(''):`<p class="vazio">Nenhum brinquedo com essa combinação ainda. Fale com a gente no WhatsApp que a gente ajuda a escolher.</p>`;
 }
 

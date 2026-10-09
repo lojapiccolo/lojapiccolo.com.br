@@ -5,7 +5,7 @@
   "nome2": "Formas",
   "familia": "Encaixar & Equilibrar",
   "ordem": 1,
-  "idade": "3 a 6 anos",
+  "idade": "A partir de 1 ano",
   "preco": "249,90",
   "desc": "Gire, encaixe e empilhe formas e cores em uma brincadeira cheia de novas combinações.",
   "beneficios": [
@@ -37,7 +37,7 @@
   "nome2": "Equilibrista",
   "familia": "Encaixar & Equilibrar",
   "ordem": 2,
-  "idade": "3 a 6 anos",
+  "idade": "A partir de 9 meses",
   "preco": "139,90",
   "desc": "Monte a melancia peça por peça e encontre o equilíbrio perfeito sem deixar a brincadeira cair.",
   "beneficios": [
@@ -69,7 +69,7 @@
   "nome2": "Formas",
   "familia": "Encaixar & Equilibrar",
   "ordem": 3,
-  "idade": "3 a 6 anos",
+  "idade": "A partir de 9 meses",
   "preco": "99,90",
   "desc": "Três formas, três encaixes e muitas descobertas em uma brincadeira simples, colorida e intuitiva.",
   "beneficios": [
@@ -109,7 +109,7 @@
   "nome2": "Monta & Brinca",
   "familia": "Monta & Brinca",
   "ordem": 4,
-  "idade": "3 a 6 anos",
+  "idade": "A partir de 2 anos",
   "preco": "49,90",
   "desc": "Um quebra-cabeça em 3D para montar, brincar e desenvolver habilidades de forma divertida.",
   "beneficios": [
@@ -153,7 +153,7 @@
   "nome2": "Monta & Brinca",
   "familia": "Monta & Brinca",
   "ordem": 5,
-  "idade": "3 a 6 anos",
+  "idade": "A partir de 2 anos",
   "preco": "29,90",
   "desc": "Monte sua girafa, desmonte e comece de novo — cada peça vira uma nova descoberta.",
   "beneficios": [
@@ -197,7 +197,7 @@
   "nome2": "Equilibra",
   "familia": "Encaixar & Equilibrar",
   "ordem": 6,
-  "idade": "3 a 6 anos",
+  "idade": "A partir de 3 anos",
   "preco": "79,90",
   "desc": "Empilhe os dinossauros sobre a base e descubra até onde o equilíbrio da pré-história consegue chegar.",
   "beneficios": [
@@ -241,7 +241,7 @@
   "nome2": "Tamanhos",
   "familia": "Encaixar & Equilibrar",
   "ordem": 7,
-  "idade": "3 a 6 anos",
+  "idade": "A partir de 18 meses",
   "preco": "74,90",
   "desc": "Do maior ao menor, compare, organize e encaixe as peças explorando diferentes tamanhos.",
   "beneficios": [
@@ -285,7 +285,7 @@
   "nome2": "Monta & Brinca",
   "familia": "Monta & Brinca",
   "ordem": 8,
-  "idade": "3 a 6 anos",
+  "idade": "A partir de 2 anos",
   "preco": "49,90",
   "desc": "Um elefante em peças para montar, desmontar e levar a imaginação para passear.",
   "beneficios": [
@@ -333,7 +333,7 @@
   "nome2": "Splash",
   "familia": "Água & Movimento",
   "ordem": 9,
-  "idade": "1 a 3 anos",
+  "idade": "A partir de 18 meses",
   "preco": "49,90",
   "desc": "Uma pequena baleia feita para transformar a hora da água em brincadeira.",
   "beneficios": [
@@ -381,7 +381,7 @@
   "nome2": "das Cores",
   "familia": "Encaixar & Equilibrar",
   "ordem": 10,
-  "idade": "3 a 6 anos",
+  "idade": "A partir de 18 meses",
   "preco": "89,90",
   "desc": "Mova cada peça pelo seu caminho e percorra curvas, zigue-zagues e trilhas cheias de cor.",
   "beneficios": [
@@ -425,7 +425,7 @@
   "nome2": "Massa Divertida",
   "familia": "Faz de Conta",
   "ordem": 11,
-  "idade": "3 a 6 anos",
+  "idade": "A partir de 3 anos",
   "preco": "249,90",
   "desc": "Um convite para preparar receitas imaginárias, servir pratos especiais e transformar o faz de conta em uma deliciosa brincadeira.",
   "beneficios": [
@@ -453,7 +453,7 @@
   "nome2": "Monta & Brinca",
   "familia": "Monta & Brinca",
   "ordem": 12,
-  "idade": "3 a 6 anos",
+  "idade": "A partir de 2 anos",
   "preco": "49,90",
   "desc": "Monte seu tricerátopo peça por peça e dê vida a novas aventuras jurássicas.",
   "beneficios": [
@@ -501,7 +501,7 @@
   "nome2": "Monta & Brinca",
   "familia": "Monta & Brinca",
   "ordem": 13,
-  "idade": "3 a 6 anos",
+  "idade": "A partir de 2 anos",
   "preco": "69,90",
   "desc": "Uma raposinha para montar, desmontar e acompanhar histórias criadas pela imaginação.",
   "beneficios": [
@@ -545,7 +545,7 @@
   "nome2": "Sobre Rodas",
   "familia": "Sobre Rodas",
   "ordem": 14,
-  "idade": "2 a 4 anos",
+  "idade": "A partir de 18 meses",
   "preco": "149,90",
   "desc": "Ganso, coelho e cachorro juntos para uma brincadeira que vai longe sobre rodas.",
   "beneficios": [
@@ -585,7 +585,7 @@
   "nome2": "Sobre Rodas",
   "familia": "Sobre Rodas",
   "ordem": 15,
-  "idade": "2 a 4 anos",
+  "idade": "A partir de 18 meses",
   "preco": "59,90",
   "desc": "Um companheiro de rodas para empurrar, passear e inventar histórias por toda a casa.",
   "beneficios": [
@@ -633,7 +633,7 @@
   "nome2": "Sobre Rodas",
   "familia": "Sobre Rodas",
   "ordem": 16,
-  "idade": "2 a 4 anos",
+  "idade": "A partir de 18 meses",
   "preco": "59,90",
   "desc": "Um coelhinho sobre rodas pronto para acompanhar pequenos passeios e grandes histórias.",
   "beneficios": [
@@ -681,7 +681,7 @@
   "nome2": "Sobre Rodas",
   "familia": "Sobre Rodas",
   "ordem": 17,
-  "idade": "2 a 4 anos",
+  "idade": "A partir de 18 meses",
   "preco": "59,90",
   "desc": "Um cachorrinho sobre rodas para levar a brincadeira para onde a imaginação quiser.",
   "beneficios": [
@@ -729,7 +729,7 @@
   "nome2": "Turbo Balão",
   "familia": "Água & Movimento",
   "ordem": 18,
-  "idade": "6+ anos, com adulto",
+  "idade": "A partir de 3 anos, com adulto",
   "preco": "49,90",
   "desc": "Um carrinho movido pela força do ar para transformar cada largada em uma brincadeira cheia de movimento e descobertas.",
   "beneficios": [
